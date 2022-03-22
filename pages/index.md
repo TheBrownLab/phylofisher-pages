@@ -23,5 +23,3 @@ ___
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/latest_release_date.svg)](https://anaconda.org/phylofisher/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/platforms.svg)](https://anaconda.org/phylofisher/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/license.svg)](https://anaconda.org/phylofisher/phylofisher)
-
-<div\>
