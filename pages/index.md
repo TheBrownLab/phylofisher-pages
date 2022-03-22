@@ -14,10 +14,14 @@ permalink: /
 
 ___
 
+<div class="img-container"; align="center">
+
 [![Citations](https://img.shields.io/badge/dynamic/json?color=blue&label=Citations&query=times_cited&url=https%3A%2F%2Fmetrics-api.dimensions.ai%2Fdoi%2F10.1371%2Fjournal.pbio.3001365&style=flat-square)](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001365)
 [![GitHub](https://img.shields.io/badge/-GitHub-455149?logo=github&logoColor=white&link&style=flat-square)](https://github.com/TheBrownLab/PhyloFisher)
-[![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/installer/conda.svg)](https://conda.anaconda.org/phylofisher)
+[![Anaconda Installer Badge](https://anaconda.org/phylofisher/phylofisher/badges/installer/conda.svg)](https://conda.anaconda.org/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/downloads.svg)](https://anaconda.org/phylofisher/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/latest_release_date.svg)](https://anaconda.org/phylofisher/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/platforms.svg)](https://anaconda.org/phylofisher/phylofisher)
 [![Anaconda-Server Badge](https://anaconda.org/phylofisher/phylofisher/badges/license.svg)](https://anaconda.org/phylofisher/phylofisher)
+
+<div\>
