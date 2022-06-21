@@ -3,7 +3,7 @@ layout: default
 title: Project Directory Setup
 parent: Detailed_Example_Workflow
 nav_order: 1
-permalink: /Detailed_Example_Workflow/Step1_project_dir
+permalink: /detailed-example-workflow/step1-project-dir
 ---
 # Project Directory Setup
 
@@ -15,7 +15,7 @@ permalink: /Detailed_Example_Workflow/Step1_project_dir
 
     `cd <my_project_directory>`
 
-3. Create an input_metadata.tsv file using information about your input data. See PhyloFisherDatabase_v1.0/TEST/analysis/input_metadata.tsv and/or **Table 1** for an example. The input_metadata.tsv file contains nine required columns (detailed below) of information about input data. Each row in the file should be a new taxon to be added to the database. The input_metadata.tsv file can be most easily completed in a spreadsheet software such as Microsoft Excel and saved as a tab delimited text file. Place the completed input_metadata.tsv file in your project directory created in the previous step. After completion of a PhyloFisher run, the information in input_metadata.tsv will be appended to the permanent archival file “metadata.tsv” for any input taxon that is to be permanently added to the database.
+3. Create an input_metadata.tsv file using information about your input data. See **Table 1** for an example. The input_metadata.tsv file contains nine required columns (detailed below) of information about input data. Each row in the file should be a new taxon to be added to the database. The input_metadata.tsv file can be most easily completed in a spreadsheet software such as Microsoft Excel and saved as a tab delimited text file. Place the completed input_metadata.tsv file in your project directory created in the previous step. After completion of a PhyloFisher run, the information in input_metadata.tsv will be appended to the permanent archival file “metadata.tsv” for any input taxon that is to be permanently added to the database.
 
     *  input_metadata.tsv is a tab separated file with nine required columns (detailed below and in **Table 1**)
 
@@ -51,5 +51,33 @@ permalink: /Detailed_Example_Workflow/Step1_project_dir
     |  toAdd/  | Cuneruss.faa |  Cuneruss |    Amoebozoa    |    Discosea    | Acancas,Dictdisc |     Cunea russae    | Transcriptomic | SRR123 |
     |  toAdd/  | Mhelmari.faa |  Mhelmari |     Erebor*     |  Microhelida*  |       none       | Microheliella maris | Transcriptomic | SRR345 |
 
-    **Table 1:** Example of “input_metadata.tsv”. Here two proteomes predicted from transcriptomic data for Cunea russae (Amoebozoa, Discosea) SRA accession SRR123 and Microheliella maris (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory “toadd/” within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from Dictyostelium discoideum (Unique ID=Dictdisc) and Acanthamoeba castellanii (Unique ID=Acancast) will beused as queries in the BLAST searches against the C. russae predicted proteome. No BLAST queries from existing taxa in the database will be used to query the M. maris proteome. Since each taxonomic rank for M. maris does not already exist in the database an "*" is added at the end of each
+    **Table 1:** Example of “input_metadata.tsv”. Here two proteomes predicted from transcriptomic data for *Cunea russae* (Amoebozoa, Discosea) SRA accession SRR123 and *Microheliella maris* (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory “toAdd/” within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from *Acanthamoeba castellanii* (Unique ID=Acancast)and *Dictyostelium discoideum* (Unique ID=Dictdisc) will be used as queries in the BLAST searches against the *C*. *russae* predicted proteome. No BLAST queries from existing taxa in the database will be used to query the *M*. *maris* proteome. Since each taxonomic rank for *M*. *maris* does not already exist in the database an "*" is added at the end of each.
+<br>
+<br>
+4. Create and set up the PhyloFisher configuration file.
 
+    `config.py [OPTIONS] -d <path_to_database> -i <path_to_input_metadata.tsv>`
+    <br>
+    <br>
+
+    Required arguments:
+
+    -d, --database_folder <database_dir> Path to database directory
+    
+    -i, --input_file <input.tsv> Path to input_metadata.tsv
+    <br>
+    <br>
+    
+    Optional arguments:
+   
+    --orthomcl <omcl_data> Path to orthomcl if not in default location
+    
+    --tree_colors <tree_colors.tsv> Path to alternative single gene tree color configuration file
+
+    -h, --help Show this help message and exit
+    <br>
+    <br>
+
+    Default config.py output:
+
+     * a file called “config.ini” that contains the paths specified in input.
