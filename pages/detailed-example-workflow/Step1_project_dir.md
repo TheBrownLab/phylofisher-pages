@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Project Directory Setup
-parent: Detailed_Example_Workflow
+parent: Detailed Example Workflow
 nav_order: 1
 permalink: /detailed-example-workflow/step1-project-dir
 ---
