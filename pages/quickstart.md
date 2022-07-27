@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Quickstart
-parent: Documentation
-nav_order: 2
-permalink: /documentation/quickstart
+nav_order: 3
+permalink: /quickstart
 ---
 # Quickstart
 

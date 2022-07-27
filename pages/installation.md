@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Installation
-parent: Documentation
-nav_order: 1
-permalink: /documentation/installation
+nav_order: 2
+permalink: /installation
 ---
 # Installation
 

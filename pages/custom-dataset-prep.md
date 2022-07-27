@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Custom Dataset Preparation
-parent: Documentation
-nav_order: 4
-permalink: /documentation/custom-dataset-prep
+nav_order: 97
+permalink: custom-dataset-prep
 ---
 # Custom Dataset Preparation
 
