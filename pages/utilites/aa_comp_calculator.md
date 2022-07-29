@@ -27,18 +27,16 @@ Default aa_comp_calculator.py output:
     - Each of the following 20 columns are labeled with the IUPAC single letter abbreviation for each standard amino acid. The values in rows are the proportion of the corresponding amino acid in the sequence data for a taxon in the input file.
   - `AA_Composition_Hierarchical_Clustering.pdf` - a dendrogram built using pairwise distances calculated by Ward’s criterion between taxa after hierarchical clustering based on amino acid composition in pdf format Figure 7.
 
-<html>
-    <figure>
-        <img
-            src="https://thebrownlab.github.io/phylofisher-pages/assets/images/aa_comp_calculator.png"
-            alt="fisher.py Scheme"
-            height="75%"
-            width="100%" 
-            class="center"/>
-        <figcaption>
-            Plot produced by aa_comp_calculator. The plot is built using pairwise distances calculated by Ward’s criterion between taxa after hierarchical clustering based on amino acid composition as performed in Brown et al., 2018. Leaves are labeled and colored according to higher taxonomy of taxa in the provided alignment.
-        </figcaption>
-    </figure>
-    
-</html>
+<figure>
+    <img
+        src="https://thebrownlab.github.io/phylofisher-pages/assets/images/aa_comp_calculator.png"
+        alt="fisher.py Scheme"
+        height="75%"
+        width="100%" 
+        class="center"/>
+    <figcaption>
+        Figure 7: Plot produced by aa_comp_calculator. The plot is built using pairwise distances calculated by Ward’s criterion between taxa after hierarchical clustering based on amino acid composition as performed in Brown et al., 2018. Leaves are labeled and colored according to higher taxonomy of taxa in the provided alignment.
+    </figcaption>
+</figure>
+
 
