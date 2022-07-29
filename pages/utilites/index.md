@@ -3,6 +3,8 @@ layout: default
 title: Utilities
 nav_order: 5
 permalink: /utilities
+has_children: true
+has_toc: false
 ---
 
 # Utilities
