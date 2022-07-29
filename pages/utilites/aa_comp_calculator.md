@@ -30,7 +30,6 @@ Default aa_comp_calculator.py output:
 <figure>
     <img
         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/aa_comp_calculator.png"
-        alt="fisher.py Scheme"
         height="75%"
         width="100%" 
         class="center"/>
