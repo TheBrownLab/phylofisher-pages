@@ -33,7 +33,7 @@ build_database.py output:-
   2. OrthoMCL orthogroup identification number(s) assigned to a gene from the custom database separated by commas.
 
 What occurred:
-- The script build_database.py will:
+- The script `build_database.py` will:
   - align the provided set of orthologs using MAFFT and create profile HMMs for each gene alignment using the `hmmbuild` utility from the HMMER3 package. These profiles will be used in the ortholog “fishing” algorithms implemented in `fisher.py`.
   - build a diamond blast database from the set of provided orthologs for use in the ortholog “fishing” algorithms implemented in `fisher.py`.
   - assign OrthoMCL orthogroup number(s) to each ortholog for use in the ortholog “fishing” algorithms implemented in `fisher.py`.

@@ -27,7 +27,7 @@ Optional arguments:
   - Default: `./mammal_modeler_out_<M.D.Y>`
 - `-h`, `--help` Show this help message and exit.
 
-Default mammal_modeler.py output:
+Default `mammal_modeler.py` output:
 - a directory `mammal_modeler_out_<M.D.Y>` that contains:
     - a file `esmodel.nex` - nexus file that contains the MAMMaL mixture model. This file can be used to fit a mixture model in IQtree using the options `-m LG+ESmodel+G -mdef esmodel.nex`. 
       - **NOTE:** Do not use `+F` (i.e., LG+ESmodel+G+F) when using this model. Instead use (LG+ESmodel+G). The overall amino acid frequencies are already presented in the `esmodel.nex` file

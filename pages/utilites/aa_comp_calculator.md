@@ -20,7 +20,7 @@ Optional arguments:
   - Default: `./aa_comp_calculator_out_<M.D.Y>`
 - `-h`, `--help` Show this help message and exit
 
-Default aa_comp_calculator.py output:
+Default `aa_comp_calculator.py` output:
   - a directory `aa_comp_calculator_output_<M.D.Y>` that contains:
   - a tab separated file `aa_comp.tsv` with 21 columns:
     - “Taxon” - short name of taxon in dataset

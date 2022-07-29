@@ -2,7 +2,7 @@
 layout: default
 title: rtc_binner.py
 parent: Utilities
-nav_order: 13
+nav_order: 14
 permalink: /utilities/rtc_binner
 ---
 
@@ -32,7 +32,7 @@ Optional arguments:
   - Example: `path/to/input/*suffix`
 - `-h`, `--help` Show this help message and exit.
 
-rtc_binner.py output:
+`rtc_binner.py` output:
 - a directory `./rtc_binner_out_<M.D.Y>` with 7 subdirectories:
   - `matrix_constructor25/` that contains:
     - supermatrix (matrix, stats, and indices) of the top 25% RTC scored orthologs

@@ -37,7 +37,7 @@ Optional arguments:
   - Example: `path/to/input/*suffix`
 - `-h`, `--help` Show this help message and exit.
 
-Default random_resampler.py output:
+Default `random_resampler.py` output:
 - a directory `./random_resampler_out_<M.D.Y>ps<percentage>` that contains:
   - a set of supermatrices made from the randomly sampled genes. Each matrix has a file name structured in the following way: `<percentage of genes from total sampled>rep<replicate number>.<fas|phy|nex>`
   - a set of files `<percentage of genes from total sampled>_Percent.tsv` where column headers correspond to replicate matrices created and the rows below are genes within a particular replicate matrix.

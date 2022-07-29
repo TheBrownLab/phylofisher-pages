@@ -27,7 +27,7 @@ Optional arguments:
     - `steps_N`
 - `-h`, `--help` Show this help message and exit
 
-fast_site_remover.py output:
+`fast_site_remover.py` output:
 - a directory called `./fast_site_removal_out_<M.D.Y>` with:
   - sub-directories `steps_<N>` (N=step size) that contain:
     - alignment files of the input matrix with N fastest sites removed iteratively until exhaustion

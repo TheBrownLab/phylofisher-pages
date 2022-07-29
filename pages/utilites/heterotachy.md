@@ -26,7 +26,7 @@ Optional arguments:
   - Default: `./heterotachy_out_<M.D.Y>`
 - `-h`, `--help` Show this help message and exit
 
-Default heterotachy.py output
+Default `heterotachy.py` output
 - a directory `heterotachy_out_<M.D.Y>` that contains:
   - `slow.tre` - tree file in Newick format containing a tree pruned from the input tree and contains only taxa determined to be slow-evolving.
   - `fast.tre` - tree file in Newick format containing a tree pruned from the input tree and contains only taxa determined to be fast-evolving.

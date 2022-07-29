@@ -27,12 +27,12 @@ Optional arguments:
   - Example: `path/to/input/*suffix`
 - `-h`, `--help` Show this help message and exit.
 
-Default astral_runner.py output:
-- a file all_sgt.tre that contains:
+Default `astral_runner.py` output:
+- a file `all_sgt.tre` that contains:
   - all single gene trees provided in Newick format
-- a file bs_files.txt that contains:
+- a file `bs_files.txt` that contains:
   - paths to all ML bootstrap files
-- a file astral_BS.out that contains:
+- a file `astral_BS.out` that contains:
   - 100 bootstrapped replicate trees
   - A greedy consensus of the 100 bootstrapped replicate trees
   - The “main” ASTRAL tree
