@@ -2,7 +2,7 @@
 layout: default
 title: Third Party Software
 parent: Introduction
-nav_order: 1
+nav_order: 2
 permalink: /introduction/third-party-software
 ---
 
