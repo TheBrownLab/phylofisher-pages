@@ -28,3 +28,15 @@ permalink: /introduction/contents
   - Matrix construction from randomly re-sampled genes from a phylogenomic dataset
   - Binning single-protein trees based on Relative Tree Certainty (RTC)
   - collapsing of multiple proteomes to produce a single “most complete” proteome with regards to the database (useful for single-cell data and to form chimeric taxa from closely related species)
+
+<br><br>
+<figure>
+    <img
+        src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Figure1_general_workflow-EDITED5.png"
+        height="75%"
+        width="100%" 
+        class="center"/>
+    <figcaption>
+        Figure 1: Overview of the PhyloFisher workflow and package contents. The PhyloFisher package consists of a manually curated database of 240 protein coding genes and their paralogs from 304 eukaryotic taxa; a series tools to perform the essential steps of phylogenomic dataset construction (homolog collection, single-protein tree construction, removal of paralogs and contaminants, matrix concatenation); and many pre and post-construction analyses necessary for a publication-quality phylogenomic study.
+    </figcaption>
+</figure>
