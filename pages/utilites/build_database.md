@@ -12,13 +12,13 @@ Construct a custom database or update taxonomy in a database.
 
 `build_database.py [OPTIONS]`
 Optional arguments:
-- `-t`, `--threads <N>` Number of threads
+- `-t`, `--threads <N>` Number of threads.
   - Default:1
-- `-n`, `--no_og_file` Do not make Gene OG file
+- `-n`, `--no_og_file` Do not make Gene OG file.
 - `-o`, `--og_threshold 0.X` (0-1) proportion of sequences that must hit an OrthoMCL orthogroup for the group to be assigned.
   - Default: 0.1 (10%)
 - `--rename <to_rename.tsv>` Rename taxa in the database. Input is a tab-delimted file (.tsv) containing the Old Unique ID, New Unique ID, and New Long Name (Table 7).
-- `-h`, `--help` Show this help message and exit
+- `-h`, `--help` Show this help message and exit.
 
 **NOTE:** `build_database.py` must be run within `PhyloFisherDatabase_v1.0/database`
 
@@ -42,7 +42,7 @@ What occurred:
     - If the provided gene alignment is assigned “no group” in OrthoMCL the gene cannot be used in the PhyloFisher workflow.
     - If the gene is assigned a bacterial OrthoMCL orthogroup the gene cannot be used in the PhyloFisher workflow.
 
-**NOTE:** OrthoMCL orthogroup assignment hinges on integrity of ortholog choices in the starting ortholog files provided. If paralogs are unknowingly present in the provided ortholog alignments the paralogs will likely be prioritized by the fisher algorithm. To investigate the level of paralogy of genes in a custom database, we strongly recommend users re-add all taxa in their custom database using the main workflow of PhyloFisher. After an initial run through the main PhyloFisher workflow that includes manual curation, we recommend users rerun build_dataset.py to update profile HMMs, and blast databases to promote highest level of accuracy by the fisher algorithm in subsequent runs.
+**NOTE:** OrthoMCL orthogroup assignment hinges on integrity of ortholog choices in the starting ortholog files provided. If paralogs are unknowingly present in the provided ortholog alignments the paralogs will likely be prioritized by the fisher algorithm. To investigate the level of paralogy of genes in a custom database, we strongly recommend users re-add all taxa in their custom database using the main workflow of PhyloFisher. After an initial run through the main PhyloFisher workflow that includes manual curation, `build_dataset.py` will update profile HMMs, and blast databases to promote highest level of accuracy by the fisher algorithm in subsequent runs.
 
 
 <br><br>

@@ -35,4 +35,4 @@ Optional arguments:
   - a file `rate`&&
   - `dist_est.ctl`&&
 
-&& These are standard `dist_est` input/output files. See the `dist_est` documentation for a more detailed explanation of their contents.
+&& These are standard `dist_est` input/output files. See the [`dist_est` documentation](https://amoeba.msstate.edu/phylofisher/pdfs/distest.pdf) for a more detailed explanation of their contents.
