@@ -24,12 +24,12 @@ Optional arguments:
 
 build_database.py output:-
 - a directory `profiles/` that contains:
-  - profile HMMs of all ortholog files from the custom database
+  - profile HMMs of all ortholog files from the custom database.
 - a directory `datasetdb/` that contains:
-  - a diamond blast database of the orthologs from the custom database
-- a directory `paralogs/` - This empty directory is created if no paralogs directory exists initially
+  - a diamond blast database of the orthologs from the custom database.
+- a directory `paralogs/` - This empty directory is created if no paralogs directory exists initially.
 - a tab separated file `gene_og` with two columns:
-  1. Name of gene from the custom database
+  1. Name of gene from the custom database.
   2. OrthoMCL orthogroup identification number(s) assigned to a gene from the custom database separated by commas.
 
 What occurred:
