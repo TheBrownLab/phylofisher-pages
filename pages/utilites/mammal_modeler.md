@@ -8,7 +8,7 @@ permalink: /utilities/mammal-modeler
 
 # `mammal_modeler.py`
 
-Generate a MAMMaL site heterogeneous model for a user defined number of classes
+Generate a MAMMaL site heterogeneous model for a user defined number of classes.
 
 `mammal_modeler.py [OPTIONS] -m <input_matrix>`
 

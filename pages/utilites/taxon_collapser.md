@@ -8,7 +8,7 @@ permalink: /utilities/taxon_collapser
 
 # `taxon_collapser.py`
 
-Permanently combine taxa that have been added to the database
+Permanently combine taxa that have been added to the database.
 
 `taxon_collapser.py [OPTIONS] -i <input.tsv>`
 

@@ -8,7 +8,7 @@ permalink: /utilities/SR4_class_recoder
 
 # `SR4_class_recoder.py`
 
-Recode an input matrix based on SR4 amino acid classification
+Recode an input matrix based on SR4 amino acid classification.
 
 `SR4_class_recoder.py [OPTIONS] -i <input_matrix>`
 
