@@ -4,6 +4,8 @@ title: Utilities
 nav_order: 5
 has_children: true
 permalink: /utilities
+has_children: true
+has_toc: false
 ---
 
 # Utilities
