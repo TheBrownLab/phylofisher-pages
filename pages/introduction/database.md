@@ -9,7 +9,7 @@ permalink: /introduction/database
 # PhyloFisher’s Provided Database
 
 ### PhyloFisher’s Provided Database Is...
-The PhyloFisher package is equipped with a manually curated database of 240 protein coding genes from up to 304 eukaryotes that can be used for phylogenomic analyses of eukaryotic organisms. Details on the genes and taxa included in the database can be found currently at the below link. A metadata file (metadata.tsv) that provides information on the proteomes used in database construction is included with the database and can be found in the directory database/. In addition to a single ortholog of each of the databases’s 240 genes, a database of each gene’s paralogs is maintained.
+The PhyloFisher package is equipped with a manually curated database of 240 protein coding genes from up to 304 eukaryotes that can be used for phylogenomic analyses of eukaryotic organisms. The contents of the database can be viewed once downloaded using the tool `explore_database.py` provided with PhyloFisher. In addition to a single ortholog of each of the databases’s 240 genes, a database of each gene’s paralogs is maintained.
 
 ### PhyloFisher’s Provided Database Is Not...
 A set of genes that are universally present and single copy in all eukaryotic taxa included in the database.
