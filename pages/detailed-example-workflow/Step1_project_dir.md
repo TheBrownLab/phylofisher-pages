@@ -31,7 +31,7 @@ permalink: /detailed-example-workflow/step1-project-dir
 
              * NOTES ON TAXONOMY: Aspects of the PhyloFisher workflow require that taxonomic terms for both categories provided in “input_metadata.tsv” be the same as in the permanent archival file “metadata.tsv”. The only exception occurs when adding an organism with a taxonomic affiliation not represented in the database (see below). The default taxonomic terms in “metadata.tsv ” can be replaced with user preferred terms. If terms are to be replaced though, we recommend replacing them with synonyms of similar rank. **DO NOT MIX SYNONYMOUS TERMS (see example below)**. This will lead to misbehavior in the fisher algorithm and wrongly denoted suspicious clades during manual inspection of single gene trees. The same erratic behavior will likely occur if our chosen taxonomic ranks are split up and replaced by several less inclusive taxonomic terms.
 
-            * New taxonomic terms) If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in input_metadata.tsv to avoid a warning from fihser.py alerting you that the taxonomy is not in metadata.txt. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in fisher.py and forest.py.
+            * New taxonomic terms: If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in input_metadata.tsv to avoid a warning from fisher.py alerting you that the taxonomy is not in metadata.txt. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in fisher.py and forest.py.
 
             * Example Taxonomic Change: If the term “Chromist” is preferred over “Stramenopiles” replace all instances of “Stramenopiles” in metadata.tsv with “Chromist” before adding new taxa with “Chromist” chosen as the higher taxonomic term in input_metadata.tsv **DO NOT MIX THE TWO** erratic behavior will ensue.
 
@@ -41,7 +41,7 @@ permalink: /detailed-example-workflow/step1-project-dir
 
         8. Data Type - A place to add a note about the type of data being added (ex.transcriptomic, genomic, EST . . .)
 
-        9. Source - A place to add notes about the source of the data such as accessionnumbers, “in-house information”, strain information etc. If a delimiter is needed here we recommend pipe ”|”.
+        9. Source - A place to add notes about the source of the data such as accession numbers, “in-house information”, strain information etc. If a delimiter is needed here we recommend pipe ”\|”.
 
         <br>
         <br>
@@ -51,7 +51,7 @@ permalink: /detailed-example-workflow/step1-project-dir
     |  toAdd/  | Cuneruss.faa |  Cuneruss |    Amoebozoa    |    Discosea    | Acancas,Dictdisc |     Cunea russae    | Transcriptomic | SRR123 |
     |  toAdd/  | Mhelmari.faa |  Mhelmari |     Erebor*     |  Microhelida*  |       none       | Microheliella maris | Transcriptomic | SRR345 |
 
-    **Table 1:** Example of “input_metadata.tsv”. Here two proteomes predicted from transcriptomic data for *Cunea russae* (Amoebozoa, Discosea) SRA accession SRR123 and *Microheliella maris* (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory “toAdd/” within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from *Acanthamoeba castellanii* (Unique ID=Acancast)and *Dictyostelium discoideum* (Unique ID=Dictdisc) will be used as queries in the BLAST searches against the *C*. *russae* predicted proteome. No BLAST queries from existing taxa in the database will be used to query the *M*. *maris* proteome. Since each taxonomic rank for *M*. *maris* does not already exist in the database an "*" is added at the end of each.
+    **Table 1:** Example of “input_metadata.tsv”. Here two proteomes predicted from transcriptomic data for *Cunea russae* (Amoebozoa, Discosea) SRA accession SRR123 and *Microheliella maris* (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory `toAdd/` within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from *Acanthamoeba castellanii* (Unique ID=Acancast)and *Dictyostelium discoideum* (Unique ID=Dictdisc) will be used as queries in the BLAST searches against the *C*. *russae* predicted proteome. No BLAST queries from existing taxa in the database will be used to query the *M*. *maris* proteome. Since each taxonomic rank for *M*. *maris* does not already exist in the database an "*" is added at the end of each.
 <br>
 <br>
 4. Create and set up the PhyloFisher configuration file.
@@ -62,22 +62,22 @@ permalink: /detailed-example-workflow/step1-project-dir
 
     Required arguments:
 
-    -d, --database_folder <database_dir> Path to database directory
+   - `-d`, `--database_folder <database_dir>` Path to database directory
     
-    -i, --input_file <input.tsv> Path to input_metadata.tsv
+   - `-i`, `--input_file <input.tsv>` Path to input_metadata.tsv
     <br>
     <br>
     
     Optional arguments:
    
-    --orthomcl <omcl_data> Path to orthomcl if not in default location
+   - `--orthomcl <omcl_data>` Path to orthomcl if not in default location
     
-    --tree_colors <tree_colors.tsv> Path to alternative single gene tree color configuration file
+   - `--tree_colors <tree_colors.tsv>` Path to alternative single gene tree color configuration file
 
-    -h, --help Show this help message and exit
+    - `-h`, `--help` Show this help message and exit
     <br>
     <br>
 
-    Default config.py output:
+    Default `config.py` output:
 
      * a file called “config.ini” that contains the paths specified in input.
