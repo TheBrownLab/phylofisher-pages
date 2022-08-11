@@ -31,7 +31,7 @@ permalink: /detailed-example-workflow/step1-project-dir
 
              * NOTES ON TAXONOMY: Aspects of the PhyloFisher workflow require that taxonomic terms for both categories provided in “input_metadata.tsv” be the same as in the permanent archival file “metadata.tsv”. The only exception occurs when adding an organism with a taxonomic affiliation not represented in the database (see below). The default taxonomic terms in “metadata.tsv ” can be replaced with user preferred terms. If terms are to be replaced though, we recommend replacing them with synonyms of similar rank. **DO NOT MIX SYNONYMOUS TERMS (see example below)**. This will lead to misbehavior in the fisher algorithm and wrongly denoted suspicious clades during manual inspection of single gene trees. The same erratic behavior will likely occur if our chosen taxonomic ranks are split up and replaced by several less inclusive taxonomic terms.
 
-            * New taxonomic terms) If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in input_metadata.tsv to avoid a warning from fihser.py alerting you that the taxonomy is not in metadata.txt. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in fisher.py and forest.py.
+            * New taxonomic terms) If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in input_metadata.tsv to avoid a warning from fisher.py alerting you that the taxonomy is not in metadata.txt. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in fisher.py and forest.py.
 
             * Example Taxonomic Change: If the term “Chromist” is preferred over “Stramenopiles” replace all instances of “Stramenopiles” in metadata.tsv with “Chromist” before adding new taxa with “Chromist” chosen as the higher taxonomic term in input_metadata.tsv **DO NOT MIX THE TWO** erratic behavior will ensue.
 
@@ -41,7 +41,7 @@ permalink: /detailed-example-workflow/step1-project-dir
 
         8. Data Type - A place to add a note about the type of data being added (ex.transcriptomic, genomic, EST . . .)
 
-        9. Source - A place to add notes about the source of the data such as accessionnumbers, “in-house information”, strain information etc. If a delimiter is needed here we recommend pipe ”|”.
+        9. Source - A place to add notes about the source of the data such as accession numbers, “in-house information”, strain information etc. If a delimiter is needed here we recommend pipe ”\|”.
 
         <br>
         <br>
@@ -62,19 +62,19 @@ permalink: /detailed-example-workflow/step1-project-dir
 
     Required arguments:
 
-    -d, --database_folder <database_dir> Path to database directory
+   - `-d`, `--database_folder <database_dir>` Path to database directory
     
-    -i, --input_file <input.tsv> Path to input_metadata.tsv
+   - `-i`, `--input_file <input.tsv>` Path to input_metadata.tsv
     <br>
     <br>
     
     Optional arguments:
    
-    --orthomcl <omcl_data> Path to orthomcl if not in default location
+   - `--orthomcl <omcl_data>` Path to orthomcl if not in default location
     
-    --tree_colors <tree_colors.tsv> Path to alternative single gene tree color configuration file
+   - `--tree_colors <tree_colors.tsv>` Path to alternative single gene tree color configuration file
 
-    -h, --help Show this help message and exit
+    - `-h`, `--help` Show this help message and exit
     <br>
     <br>
 
