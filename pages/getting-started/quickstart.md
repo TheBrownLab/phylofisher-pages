@@ -1,9 +1,11 @@
 ---
 layout: default
 title: Quickstart
-nav_order: 3
-permalink: /quickstart
+parent: getting-started
+nav_order: 4
+permalink: /getting-started/quickstart/
 ---
+
 # Quickstart
 
 1. **Make a project directory (named anything) and move into it** <br/>

@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Custom Dataset Preparation
-nav_order: 97
-permalink: custom-dataset-prep
+title: Prepare Custom Dataset 
+parent: getting-started
+nav_order: 3
+permalink: /getting-started/custom-dataset-prep/
 ---
-# Custom Dataset Preparation
+# Prepare Custom Dataset 
 
 1. **Retrieve the recommended PhyloFisher directory structure, OrthoMCL v. 5.0 database, example
 metadata.tsv, and tree_colors.tsv file via wget** <br/>
