@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Homolog collection
+title: Homolog Collection
 parent: Detailed Example Workflow
 nav_order: 2
-permalink: /detailed-example-workflow/step1-project-dir
+permalink: /detailed-example-workflow/step2-project-dir
 ---
 
 # Homolog Collection
