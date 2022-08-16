@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Prepare Custom Dataset 
-parent: getting-started
+parent: Getting Started
 nav_order: 3
 permalink: /getting-started/custom-dataset-prep/
 ---

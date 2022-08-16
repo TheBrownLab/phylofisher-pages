@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Metadata Explanation
-parent: getting-started
+parent: Getting Started
 nav_order: 5
 permalink: /getting-started/metadata-explanation/
 ---

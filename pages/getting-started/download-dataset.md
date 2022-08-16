@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Download Provided Dataset 
-parent: getting-started
+parent: Getting Started
 nav_order: 2
 permalink: /getting-started/download-provided-dataset/
 ---
