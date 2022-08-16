@@ -22,5 +22,5 @@ permalink: /authors
 * Laura Eme, PhD - [Google Scholar](https://scholar.google.com/citations?user=8FOe6yMAAAAJ&hl=en)
 * Tomáš Pánek, PhD - [Google Scholar](https://scholar.google.com/citations?hl=en&user=XtWBV9MAAAAJ&fbclid=IwAR1ybDIhzeyeCkLcD1vhinvjlbyYDZWpbWW1Al1Nw2vq0VsU_1eGDAsa4rU)
 * Andrew Roger, PhD - [Google Scholar](https://scholar.google.com/citations?user=Dm-pAawAAAAJ&hl=en)
-* Antonis Rokas - [Google Scholar](https://scholar.google.com/citations?user=OvAV_eoAAAAJ&hl=en)
-* Xing-Xing Shen - [Google Scholar](https://scholar.google.com/citations?user=aNqPBsEAAAAJ&hl=en)
+* Antonis Rokas, PhD - [Google Scholar](https://scholar.google.com/citations?user=OvAV_eoAAAAJ&hl=en)
+* Xing-Xing Shen, PhD - [Google Scholar](https://scholar.google.com/citations?user=aNqPBsEAAAAJ&hl=en)
