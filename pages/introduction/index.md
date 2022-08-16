@@ -2,7 +2,6 @@
 layout: default
 title: Introduction
 nav_order: 1
-has_children: true
 permalink: /introduction
 has_children: true
 has_toc: false
