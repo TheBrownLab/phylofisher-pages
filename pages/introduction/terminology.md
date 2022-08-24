@@ -17,16 +17,16 @@ The seven collections of data referenced in the manual are:
 2. Working Dataset - the purpose of the working dataset is to aid in the identification of orthologs, paralogs, and contaminants from input proteomes. The working dataset is created when sequences are collected by fisher.py from input proteomes and appended to the copies of the corresponding homolog files from the database. These data will then move through the PhyloFisher workflow until final decisions based on manual curation have been applied to the database. A working dataset is not revisited after decisions from manual curation have been made and applied to the database.
 
 3. Phylogenomic Dataset - A set of orthologs and taxa in the form of individual ortholog alignments and a concatenated matrix of these alignments that have been selected from the database to perform phylogenomic analyses on.
-<figure>
-    <img
-        src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Dataset_explanation_fig.png"
-        height="75%"
-        width="100%" 
-        class="center"/>
-    <figcaption>
-        Figure 2: Flow chart of the PhyloFisher workflow documenting how collections of data are referenced throughout the manual.
-    </figcaption>
-</figure>
+    <figure>
+        <img
+            src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Dataset_explanation_fig.png"
+            height="75%"
+            width="100%" 
+            class="center"/>
+        <figcaption>
+            Figure 2: Flow chart of the PhyloFisher workflow documenting how collections of data are referenced throughout the manual.
+        </figcaption>
+    </figure>
 
 4. Gene(s) - The term gene is used throughout this manual to refer to a group of closely related homologs (similar to a gene family). These genes are named based on the corresponding human or Arabidopsis thaliana orthologs that were used as queries in BLAST searches to collect sequences from other eukaryotic organisms during the construction of the phylogenomic database developed in Tice et al., 2016. The aforementioned database was used as a starting point for construction of the PhyloFisher v1.0 database. We have chosen not to use either of the terms “gene family” or “orthogroup” because these genes only contain the most similar sequences to the initial search query rather than all potential members.
 
