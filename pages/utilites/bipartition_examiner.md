@@ -29,7 +29,7 @@ Optional arguments:
 
 <br><br>
 <figure>
-    <table>
+    <table class="center">
         <tr>
             <td>/home/myworkingdirectory/MLbootstrap.experiment1</td>
         </tr>
@@ -47,7 +47,7 @@ Optional arguments:
 
 <br><br>
 <figure>
-    <table>
+    <table class="center">
         <tr>
             <td>Amoebozoa</td>
         </tr>
