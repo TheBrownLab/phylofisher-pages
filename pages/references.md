@@ -60,6 +60,10 @@ permalink: /references
 </p>
 
 <p align="justify", style="text-indent: -36px; padding-left: 36px;">
+    Salomaki, E.D., Terpis, K.X., Rueckert, S. et al. Gregarine single-cell transcriptomics reveals differential mitochondrial remodeling and adaptation in apicomplexans. BMC Biol 19, 77 (2021). https://doi.org/10.1186/s12915-021-01007-2
+</p>
+
+<p align="justify", style="text-indent: -36px; padding-left: 36px;">
     Stamatakis, A. (2014). RAxML version 8: A tool for phylogenetic analysis and post-analysis of large phylogenies. Bioinformatics, 30(9), 1312–1313. https://doi.org/10.1093/bioinformatics/btu033
 </p>
 
