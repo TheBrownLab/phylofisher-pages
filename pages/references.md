@@ -33,7 +33,7 @@ permalink: /references
         Huerta-Cepas, J., Serra, F., & Bork, P. (2016). ETE 3: Reconstruction, Analysis, and Visualization of Phylogenomic Data. Molecular Biology and Evolution, 33(6), 1635–1638. https://doi.org/10.1093/molbev/msw046
     </p>
     <p align="justify", style="text-indent: -36px; padding-left: 36px;">
-        Inagaki, Y., Susko, E., Fast, N. M., & Roger, A. J. (2004). Covarion Shifts Cause a Long-Branch Attraction Artifact That Unites Microsporidia and Archaebacteria in EF-1􀀀 Phylogenies. Molecular Biology and Evolution, 21(7), 1340–1349. https://doi.org/10.1093/molbev/msh130
+        Inagaki, Y., Susko, E., Fast, N. M., & Roger, A. J. (2004). Covarion Shifts Cause a Long-Branch Attraction Artifact That Unites Microsporidia and Archaebacteria in EF-1alpha Phylogenies. Molecular Biology and Evolution, 21(7), 1340–1349. https://doi.org/10.1093/molbev/msh130
     </p>
     <p align="justify", style="text-indent: -36px; padding-left: 36px;">
         Katoh, K., & Standley, D. M. (2013). MAFFT multiple sequence alignment software version 7: Improvements in performance and usability. Molecular Biology and Evolution, 30(4), 772–780. https://doi.org/10.1093/molbev/mst010
