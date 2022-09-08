@@ -60,7 +60,7 @@ permalink: /references
 </p>
 
 <p align="justify", style="text-indent: -36px; padding-left: 36px;">
-    Salomaki, E.D., Terpis, K.X., Rueckert, S. et al. Gregarine single-cell transcriptomics reveals differential mitochondrial remodeling and adaptation in apicomplexans. BMC Biol 19, 77 (2021). https://doi.org/10.1186/s12915-021-01007-2
+    Salomaki, E.D., Terpis, K.X., Rueckert,  Michael Kotyk, Zuzana Kotyková Varadínová, Ivan Čepička, Christopher E. Lane & Martin Kolisko. (2021). Gregarine single-cell transcriptomics reveals differential mitochondrial remodeling and adaptation in apicomplexans. BMC Biol. 19(77). https://doi.org/10.1186/s12915-021-01007-2
 </p>
 
 <p align="justify", style="text-indent: -36px; padding-left: 36px;">
