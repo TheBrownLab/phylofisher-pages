@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Gene Tree Construction
+title: Tree Parsing
 parent: Detailed Example Workflow
 nav_order: 4
 permalink: /detailed-example-workflow/step4-tree-parsing
