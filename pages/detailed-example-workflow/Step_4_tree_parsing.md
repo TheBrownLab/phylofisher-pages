@@ -201,17 +201,17 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
         - Sequences pre-marked for deletion are not highlighted in color based on taxonomy and are written in regular red font. Only present if known contaminants were provided to `forest.py` via the contaminants and backpropagate flags.
 
-    <br><br>
-    <figure>
-        <img
-         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Parasorter_display.jpg"
-            height="75%"
-            width="100%" 
-            class="center"/>
-        <figcaption>
-            Figure 4: Figure 4: Example and explanation of a single gene tree visualized with ParaSorter (above) and of the PhyloFisher sequence header naming scheme (below).
-        </figcaption>
-        </figure>
+        <br><br>
+        <figure>
+            <img
+            src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Parasorter_display.jpg"
+                height="75%"
+                    width="100%" 
+                    class="center"/>
+                <figcaption>
+                    Figure 4: Figure 4: Example and explanation of a single gene tree visualized with ParaSorter (above) and of the PhyloFisher sequence header naming scheme (below).
+                </figcaption>
+        </figure>       
 
 
 
