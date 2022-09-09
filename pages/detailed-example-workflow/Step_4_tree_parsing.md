@@ -204,7 +204,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     <br><br>
     <figure>
         <img
-         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Parasorter_display.pdf"
+         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Parasorter_display.jpg"
             height="75%"
             width="100%" 
             class="center"/>
