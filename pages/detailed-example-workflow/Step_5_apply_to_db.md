@@ -2,7 +2,7 @@
 layout: default
 title: Apply to Database
 parent: Detailed Example Workflow
-nav_order: 4
+nav_order: 5
 permalink: /detailed-example-workflow/step5-apply-to-database
 ---
 
