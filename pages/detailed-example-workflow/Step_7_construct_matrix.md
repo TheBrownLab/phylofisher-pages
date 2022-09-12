@@ -49,7 +49,7 @@ Default `matrix_constructor.p`y output:
     - a directory `divvier` that contains:
       - `{gene_name}.aln.partial.fas` - output of Divvier and input for timAl.
     - a directory `trimAl` that contains:
-      - `{gene_name}.gt80trimAl.fas` - output of trimAl. Trimmed alignments, in FASTA format, that will be used for concatenation.
+      - `{gene_name}.gt80trimAl.fas` - output of trimAl. Trimmed alignments, in FASTA format, that will be used for concatenation and can be used to compute single ortholog trees for use in coalescent-based analyses.
     - `indices.tsv` - a tab separated file with three columns outlining the single gene boundaries in the supermatrix:
       1. Gene - name of the gene
       2. Start - first position of the gene within the super matrix
