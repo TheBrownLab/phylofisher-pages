@@ -29,6 +29,6 @@ Notes:
 
 ## Installation of `forest_local.py` & ParaSorter locally (including Windows)
 
-Installation of `forest_local.py` (a standalone version of `forest.py`) and ParaSorter on a users local machine is required for downstream steps in the PhyloFisher workflow. Although the entire PhyloFisher software package does not run on Windows, this minimal download will. This download will provide users (including Windows users) the graphical tree parsing aspects of the package on their local machines. This minimal download of `forest.py` and ParaSorter can be retrieved from the [”ParaSorter” section](https://github.com/TheBrownLab/PhyloFisher/tree/master/parasorter) of PhyloFisher GitHub Repository.
+Installation of `forest_local.py` (a standalone version of `forest.py`) and ParaSorter on a users local machine is required for downstream steps in the PhyloFisher workflow. Although the entire PhyloFisher software package does not run on Windows, this minimal download will. This download will provide users (including Windows users) the graphical tree parsing aspects of the package on their local machines. This minimal download of `forest_local.py` and ParaSorter can be retrieved from the [”ParaSorter” section](https://github.com/TheBrownLab/PhyloFisher/tree/master/parasorter) of PhyloFisher GitHub Repository.
 
 Further documentation on the usage of both `forest_local.py` and Parasorter can be found in steps 9 and 10 in the ”Detailed Example Workflow” section of this manual respectively.
