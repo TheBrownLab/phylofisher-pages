@@ -19,6 +19,10 @@ Required arguments:
 Optional arguments:
 - `-o`, `--output <out_dir>` Path to user-defined output directory
   - Default: `./bipartition_examiner_out_<M.D.Y>`
+- `--chimera` A .tsv containing a Unique ID, higher taxonomy, and lower taxonomy for each chimera within the input bootstrap files. The file contains three columns:
+  - Chimera_ID 1
+  - Higher_Tax
+  - Lower_Tax
 - `--bar_plot` Plot categorical data as a barplot
   - Default: Plot series data as a line graph.
 - `-h`, `--help` Show this help message and exit.
