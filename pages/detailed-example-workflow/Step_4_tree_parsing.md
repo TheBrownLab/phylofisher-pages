@@ -21,15 +21,15 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     Optional arguments:
 
-    - `-a`, `--contaminants` <contams.tsv> Path to file containing known contaminants to be removed. See Table 2
+    - `-a`, `--contaminants <contams.tsv>` Path to file containing known contaminants to be removed. See Table 2
 
     - `-b`, `--backpropagate` Path to file containing known contaminants to be backpropagated. See Table 2
 
-    - `-t`, `--threads` <N> Number of threads
+    - `-t`, `--threads <N>` Number of threads
     
         - Default: 1
 
-    - `-o`, `--output` <out_dir> Path to user-defined output directory
+    - `-o`, `--output <out_dir>` Path to user-defined output directory
 
         - Default: `./forest_out_<M.D.Y>`
 
