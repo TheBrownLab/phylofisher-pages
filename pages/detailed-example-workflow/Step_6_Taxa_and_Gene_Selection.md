@@ -8,8 +8,7 @@ permalink: /detailed-example-workflow/step6-Taxa-and-Gene_Selection
 
 # Select Taxa and Orthologs to be Included in a Phylogenomic Dataset
 
-To select taxa and orthologs to be included in the final phylogenomic dataset users can run the scripts
-`select_taxa.py` and `select_orthologs.py` respectively. Each will generate a .tsv file (contents explained below) that will serve to select either taxa or orthologs to include and both .tsv files are used as input for the script `prep_final_dataset.py` downstream.
+To select taxa and orthologs to be included in the final phylogenomic dataset users can run the scripts `select_taxa.py` and `select_orthologs.py` respectively. Each will generate a .tsv file (contents explained below) that will serve to select either taxa or orthologs to include and both .tsv files are used as input for the script `prep_final_dataset.py` downstream.
 
 NOTE: If all taxa and all orthologs in the database are to be included in the final phylogenomic dataset steps 1 and 2 are not necessary. Skip directly to step 3.
 
@@ -119,7 +118,7 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
                     width="100%" 
                     class="center"/>
                 <figcaption>
-                    Figure 6: Plot produced by `select_orthologs.py``. Ortholog names are shown at the bottom of the figure across the x-axis. The percentage of total taxa present in an ortholog (completeness) is shown on the y-axis. The total number of genes is shown across the top of the figure on the x-axis. The bars are colored by level of completeness in increments of 10%. Legend explaining color coding is shown in the top right of the figure.
+                    Figure 6: Plot produced by `select_orthologs.py`. Ortholog names are shown at the bottom of the figure across the x-axis. The percentage of total taxa present in an ortholog (completeness) is shown on the y-axis. The total number of genes is shown across the top of the figure on the x-axis. The bars are colored by level of completeness in increments of 10%. Legend explaining color coding is shown in the top right of the figure.
                 </figcaption>
         </figure>
 
