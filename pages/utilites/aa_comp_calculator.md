@@ -18,6 +18,10 @@ Required arguments:
 Optional arguments:
 - `-o`, `--output <out_dir>` Path to user-defined output directory
   - Default: `./aa_comp_calculator_out_<M.D.Y>`
+- `--chimera` A .tsv containing a Unique ID, higher taxonomy, and lower taxonomy for each chimera within the input matrix. The file contains three columns:
+  - Chimera_ID 1
+  - Higher_Tax
+  - Lower_Tax
 - `-h`, `--help` Show this help message and exit
 
 Default `aa_comp_calculator.py` output:
