@@ -58,7 +58,7 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
     NOTE: Decisions provided to `--to_include` will override decisions provided to `--to_exclude` so be
     cautious.
 
-    Alternatively, all changes can be made manually by opening `select_taxa.tsv` and changing taxa designations from “yes” to “no.
+    Alternatively, all changes can be made manually by opening `select_taxa.tsv` and changing taxa designations from “yes” to “no".
 
     <br>
 
