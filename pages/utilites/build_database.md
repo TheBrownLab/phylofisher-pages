@@ -43,9 +43,8 @@ What occurred:
     - If the gene is assigned a bacterial OrthoMCL orthogroup the gene cannot be used in the PhyloFisher workflow.
 
 **NOTE:** OrthoMCL orthogroup assignment hinges on integrity of ortholog choices in the starting ortholog files provided. If paralogs are unknowingly present in the provided ortholog alignments the paralogs will likely be prioritized by the fisher algorithm. To investigate the level of paralogy of genes in a custom database, we strongly recommend users re-add all taxa in their custom database using the main workflow of PhyloFisher. After an initial run through the main PhyloFisher workflow that includes manual curation, `build_dataset.py` will update profile HMMs, and blast databases to promote highest level of accuracy by the fisher algorithm in subsequent runs.
+<br/><br/>
 
-
-<br><br>
 | Old Unique ID | New Unique ID |    New Full Name    |
 | :-----------: | :-----------: | :-----------------: |
 |   Pleucart    |   Chrycart    | Chrysotila carterae |
