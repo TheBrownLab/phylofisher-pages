@@ -16,10 +16,10 @@ Required arguments:
 - `-i`, `--input <input_dir>` Path to directory containing single gene trees built from only orthologs, corresponding bootstrap value files, and corresponding alignments.
 
 Optional arguments:
-- `--in_format <format>` Format of the input files.
+- `--in_format <format>` Format of the input files
   - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters), or `phylip-relaxed` (names are not truncated)
   - Default: `fasta`
-- `--out_format <format>` Desired format of the output files.
+- `--out_format <format>` Desired format of the output files
   - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters), or `phylip-relaxed` (names are not truncated)
   - Default: `fasta`
 - `-o`, `--output <out_dir>` Path to user-defined output directory
@@ -27,10 +27,10 @@ Optional arguments:
 - `-p`, `--prefix <prefix>` Prefix of input files
   - Default: `NONE`
   - Example: `path/to/input/prefix*`
-- `-s`, `--suffix <suffix>` Suffix of input files.
+- `-s`, `--suffix <suffix>` Suffix of input files
   - Default: `NONE`
   - Example: `path/to/input/*suffix`
-- `-h`, `--help` Show this help message and exit.
+- `-h`, `--help` Show this help message and exit
 
 `rtc_binner.py` output:
 - a directory `./rtc_binner_out_<M.D.Y>` with 7 subdirectories:

@@ -5,12 +5,11 @@ parent: Getting Started
 nav_order: 3
 permalink: /getting-started/custom-dataset-prep/
 ---
-# Prepare Custom Dataset 
+# Prepare Custom Database 
 
-1. Retrieve the recommended PhyloFisher directory structure, OrthoMCL v. 5.0 database, example
-`metadata.tsv`, and `tree_colors.tsv` file via `wget` <br/>
+1. Retrieve the recommended PhyloFisher directory structure, OrthoMCL database, example `metadata.tsv`, and `tree_colors.tsv` file via `wget` <br/>
 `wget https://ndownloader.figshare.com/files/29093325`
-2. Uncompress the file 29093325 <br/>
+2. Uncompress the file `29093325` <br/>
 `tar -xzvf 29093325`
 3. Move into the directory `PhyloFisher_FOR_CUSTOM_DATABASE` <br/>
 `cd PhyloFisher_FOR_CUSTOM_DATABASE`
@@ -39,12 +38,6 @@ permalink: /getting-started/custom-dataset-prep/
 8. Run `build_database.py`. Detailed instructions on `build_database.py` can be found [here](https://thebrownlab.github.io/phylofisher-pages/utilities/build-database).
 
 ### Some notes about sequence headers:
-* Each sequence header (sequence header = Unique ID) within a file must be unique. Sequence
-headers must be the same across all files for a taxon and must be the same as the Unique ID
-provided in the metadata.tsv file for the taxon. This is true for both ortholog and paralog
-fasta files.
-* Sequence headers cannot contain underscores “_”, at symbols “@” white spaces, or double
-dots “..”. This is true for both ortholog and paralog fasta files.
-* If you provided separate sequence files containing paralogs, each sequence header within each
-file will have “..p<randomfivedigitnumber>” appended to the end by build_database.py (the
-python script that will prepare the custom database for use in PhyloFisher).
+* Each sequence header (sequence header = Unique ID) within a file must be unique. Sequence headers must be the same across all files for a taxon and must be the same as the Unique ID provided in the `metadata.tsv` file for the taxon. This is true for both ortholog and paralog fasta files.
+* Sequence headers cannot contain underscores “_”, at symbols “@”, white spaces, or double dots “..”. This is true for both ortholog and paralog fasta files.
+* If you provided separate sequence files containing paralogs, each sequence header within each file will have “..p<randomfivedigitnumber>” appended to the end by `build_database.py`.

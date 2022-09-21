@@ -16,13 +16,13 @@ Required arguments:
  - `-i`, `--input <input_dir>` Path to input directory containing gene files in fasta format
 
 Optional arguments:
-- `-if`, `--in_format <format>` Format of the input single gene alignments.
-  - Options: `fasta`, `phylip` (names truncated at 10 characters), `phylip-relaxed` (names are not truncated), or `nexus`.
+- `-if`, `--in_format <format>` Format of the input single gene alignments
+  - Options: `fasta`, `phylip` (names truncated at 10 characters), `phylip-relaxed` (names are not truncated), or `nexus`
   - Default: `fasta`
-- `-of`, `--out_format <format>` Desired format of the output steps.
+- `-of`, `--out_format <format>` Desired format of the output steps
   - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters), or `phylip-relaxed` (names are not truncated)
   - Default: `fasta`
-- `-ci`, `--confidence_interval <0.N>` Confidence interval to use to calculate the number of replicates required.
+- `-ci`, `--confidence_interval <0.N>` Confidence interval to use to calculate the number of replicates required
   - Default: `0.95`
 - `-ps`, `--percent_sampling <N>` Percent sampling step size
   - Default: `20`
@@ -35,7 +35,7 @@ Optional arguments:
 - `-s`, `--suffix <suffix>` Suffix of input files
   - Default: `NONE`
   - Example: `path/to/input/*suffix`
-- `-h`, `--help` Show this help message and exit.
+- `-h`, `--help` Show this help message and exit
 
 Default `random_resampler.py` output:
 - a directory `./random_resampler_out_<M.D.Y>ps<percentage>` that contains:

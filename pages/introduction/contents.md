@@ -15,7 +15,7 @@ permalink: /introduction/contents
   - Automated removal of non-homologous sites, alignment, trimming, length filtering and single gene tree construction
   - Visualization of single gene trees and interactive selection of orthologs, paralogs, and removal of contamination
   - Generation of final statistics post ortholog selection and contamination removal
-    - Can be subset by user provided thresholds of completeness or by assigned taxonomy.
+    - Can be subset by user provided thresholds of completeness or by assigned taxonomy
   - Creation of chimeric taxa for use in phylogenomic analyses
   - Automated concatenation of phylogenomic matrices
 - Utilities for:
@@ -37,6 +37,6 @@ permalink: /introduction/contents
         width="100%" 
         class="center"/>
     <figcaption>
-        Figure 1: Overview of the PhyloFisher workflow and package contents. The PhyloFisher package consists of a manually curated database of 240 protein coding genes and their paralogs from 304 eukaryotic taxa; a series tools to perform the essential steps of phylogenomic dataset construction (homolog collection, single-protein tree construction, removal of paralogs and contaminants, matrix concatenation); and many pre and post-construction analyses necessary for a publication-quality phylogenomic study.
+        <b>Figure 1:</b> Overview of the PhyloFisher workflow and package contents. The PhyloFisher package consists of a manually curated database of 240 protein coding genes and their paralogs from 304 eukaryotic taxa; a series tools to perform the essential steps of phylogenomic dataset construction (homolog collection, single-protein tree construction, removal of paralogs and contaminants, matrix concatenation); and many pre and post-construction analyses necessary for a publication-quality phylogenomic study.
     </figcaption>
 </figure>

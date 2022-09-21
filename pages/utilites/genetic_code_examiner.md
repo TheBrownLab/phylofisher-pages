@@ -43,6 +43,6 @@ Default `genetic_code_examiner.py` output:
         width="100%" 
         class="center"/>
     <figcaption>
-        Figure 8: Plot produced by genetic_code_examiner.py. The y-axis shows the number of taxa from the database with the amino acid labeled on the x-axis conserved for a given site and the input taxon has the codon in the title at the same site. This plot provides evidence that the codon UAA that acts as a stop codon (*) in the standard nuclear genetic code has been reassigned to code for the amino acid glutamine (Q) in the nuclear genome of <i>Tetrahymena thermophila</i>.
+        <b>Figure 8:</b> Plot produced by `genetic_code_examiner.py`. The y-axis shows the number of taxa from the database with the amino acid labeled on the x-axis conserved for a given site and the input taxon has the codon in the title at the same site. This plot provides evidence that the codon UAA that acts as a stop codon (*) in the standard nuclear genetic code has been reassigned to code for the amino acid glutamine (Q) in the nuclear genome of <i>Tetrahymena thermophila</i>.
     </figcaption>
 </figure>

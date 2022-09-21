@@ -41,4 +41,4 @@ Default `heterotachy.py` output
   - a subdirectory `steps_<N>` (N=step size) that contains the files:
     - `step<0-N>.phy` - phylip formatted matrix files with N less sites than the previous step to exhaustion.
 
-&& These are standard dist_est input/output files. See the [`dist_est` documentation](https://amoeba.msstate.edu/phylofisher/pdfs/distest.pdf) for a more detailed explanation of their contents.
+&& These are standard dist_est input/output files. See the [dist_est documentation](https://amoeba.msstate.edu/phylofisher/pdfs/distest.pdf) for a more detailed explanation of their contents.

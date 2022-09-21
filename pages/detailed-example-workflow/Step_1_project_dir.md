@@ -15,9 +15,9 @@ permalink: /detailed-example-workflow/step1-project-dir
 
     `cd <my_project_directory>`
 
-3. Create an input_metadata.tsv file using information about your input data. See **Table 1** for an example. The input_metadata.tsv file contains nine required columns (detailed below) of information about input data. Each row in the file should be a new taxon to be added to the database. The input_metadata.tsv file can be most easily completed in a spreadsheet software such as Microsoft Excel and saved as a tab delimited text file. Place the completed input_metadata.tsv file in your project directory created in the previous step. After completion of a PhyloFisher run, the information in input_metadata.tsv will be appended to the permanent archival file “metadata.tsv” for any input taxon that is to be permanently added to the database.
+3. Create an `input_metadata.tsv` file using information about your input data. See Table 1 for an example. The `input_metadata.tsv` file contains nine required columns (detailed below) of information about input data. Each row in the file should be a new taxon to be added to the database. The `input_metadata.tsv` file can be most easily completed in a spreadsheet software such as Microsoft Excel and saved as a tab delimited text file. Place the completed `input_metadata.tsv` file in your project directory created in the previous step. After completion of a PhyloFisher run, the information in `input_metadata.tsv` will be appended to the permanent archival file `metadata.tsv` for any input taxon that is to be permanently added to the database.
 
-    *  input_metadata.tsv is a tab separated file with nine required columns (detailed below and in **Table 1**)
+    *  `input_metadata.tsv` is a tab separated file with nine required columns (detailed below and in Table 1)
 
         1. Location - the absolute path to the directory where the input proteome(s) are located.
 
@@ -29,13 +29,13 @@ permalink: /detailed-example-workflow/step1-project-dir
 
         5. Lower Taxonomy - a taxonomic rank above the genus level for the input taxon.
 
-             * NOTES ON TAXONOMY: Aspects of the PhyloFisher workflow require that taxonomic terms for both categories provided in “input_metadata.tsv” be the same as in the permanent archival file “metadata.tsv”. The only exception occurs when adding an organism with a taxonomic affiliation not represented in the database (see below). The default taxonomic terms in “metadata.tsv ” can be replaced with user preferred terms. If terms are to be replaced though, we recommend replacing them with synonyms of similar rank. **DO NOT MIX SYNONYMOUS TERMS (see example below)**. This will lead to misbehavior in the fisher algorithm and wrongly denoted suspicious clades during manual inspection of single gene trees. The same erratic behavior will likely occur if our chosen taxonomic ranks are split up and replaced by several less inclusive taxonomic terms.
+             * NOTES ON TAXONOMY: Aspects of the PhyloFisher workflow require that taxonomic terms for both categories provided in `input_metadata.tsv` be the same as in the permanent archival file `metadata.tsv`. The only exception occurs when adding an organism with a taxonomic affiliation not represented in the database (see below). The default taxonomic terms in `metadata.tsv` can be replaced with user preferred terms. If terms are to be replaced though, we recommend replacing them with synonyms of similar rank. **DO NOT MIX SYNONYMOUS TERMS (see example below)**. This will lead to misbehavior in the fisher algorithm and wrongly denoted suspicious clades during manual inspection of single gene trees. The same erratic behavior will likely occur if our chosen taxonomic ranks are split up and replaced by several less inclusive taxonomic terms.
 
-            * New taxonomic terms: If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in input_metadata.tsv to avoid a warning from fisher.py alerting you that the taxonomy is not in metadata.txt. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in fisher.py and forest.py.
+            * New taxonomic terms: If you are adding an organism with a taxonomic affiliation of one or both taxonomic categories not already represented in the database, add an “\*” at the end (no space) of the unrepresented name in `input_metadata.tsv` to avoid a warning from `fisher.py` alerting you that the taxonomy is not in `metadata.tsv`. If higher and lower taxonomy are unknown at the time of addition simply use some unique placeholder until proper taxonomic terms can be assigned later. **DO NOT USE TERMS YOU MAY REUSE LATER** such as “unknown” or “new. Failure to change out a term and then reusing it again later for an unrelated organism will cause erratic behavior in `fisher.py` and `forest.py`.
 
-            * Example Taxonomic Change: If the term “Chromist” is preferred over “Stramenopiles” replace all instances of “Stramenopiles” in metadata.tsv with “Chromist” before adding new taxa with “Chromist” chosen as the higher taxonomic term in input_metadata.tsv **DO NOT MIX THE TWO** erratic behavior will ensue.
+            * Example Taxonomic Change: If the term “Chromist” is preferred over “Stramenopiles” replace all instances of “Stramenopiles” in metadata.tsv with “Chromist” before adding new taxa with “Chromist” chosen as the higher taxonomic term in `input_metadata.tsv` **DO NOT MIX THE TWO** erratic behavior will ensue.
 
-        6. Blast Seed - If the word ‘none’ is provided the ortholog fishing algorithm will proceed through the default route. If the algorithm is to proceed through the phylogenetically aware route at least one Unique ID of a related organism already in the database must be provided. Use explore_database.py or open metadata.tsv to get a list of all Unique IDs of taxa already present in the provided database. There is no limit to the number of Unique IDs that can be provided here. Unique IDs of taxa must be separated by only a comma with no space in between.
+        6. Blast Seed - If the word ‘none’ is provided the ortholog fishing algorithm will proceed through the default route. If the algorithm is to proceed through the phylogenetically aware route at least one Unique ID of a related organism already in the database must be provided. Use `explore_database.py` or open `metadata.tsv` to get a list of all Unique IDs of taxa already present in the provided database. There is no limit to the number of Unique IDs that can be provided here. Unique IDs of taxa must be separated by only a comma with no space in between.
 
         7. Long Name - Full name of the input taxon. The long name cannot cannot contain underscores “_”, at symbols “@”, double dots “..”.
 
@@ -51,20 +51,18 @@ permalink: /detailed-example-workflow/step1-project-dir
     |  toAdd/  | Cuneruss.faa |  Cuneruss |    Amoebozoa    |    Discosea    | Acancas,Dictdisc |     Cunea russae    | Transcriptomic | SRR123 |
     |  toAdd/  | Mhelmari.faa |  Mhelmari |     Erebor*     |  Microhelida*  |       none       | Microheliella maris | Transcriptomic | SRR345 |
 
-    **Table 1:** Example of “input_metadata.tsv”. Here two proteomes predicted from transcriptomic data for *Cunea russae* (Amoebozoa, Discosea) SRA accession SRR123 and *Microheliella maris* (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory `toAdd/` within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from *Acanthamoeba castellanii* (Unique ID=Acancast)and *Dictyostelium discoideum* (Unique ID=Dictdisc) will be used as queries in the BLAST searches against the *C*. *russae* predicted proteome. No BLAST queries from existing taxa in the database will be used to query the *M*. *maris* proteome. Since each taxonomic rank for *M*. *maris* does not already exist in the database an "*" is added at the end of each.
+    **Table 1:** Example of `input_metadata.tsv`. Here two proteomes predicted from transcriptomic data for *Cunea russae* (Amoebozoa, Discosea) SRA accession SRR123 and *Microheliella maris* (Erebor, Microhelida) SRA accession SRR345 will be added to the database. Both predicted proteomes are located in the directory `toAdd/` within the project directory.  The proteomes will have the Unique IDs “Cunruss” and "Mhelmari" respectively. Orthologs in the starting dataset from *Acanthamoeba castellanii* (Unique ID=Acancast)and *Dictyostelium discoideum* (Unique ID=Dictdisc) will be used as queries in the BLAST searches against the *C*. *russae* predicted proteome. No BLAST queries from existing taxa in the database will be used to query the *M*. *maris* proteome. Since each taxonomic rank for *M*. *maris* does not already exist in the database an "*" is added at the end of each.
 <br>
 <br>
 4. Create and set up the PhyloFisher configuration file.
 
     `config.py [OPTIONS] -d <path_to_database> -i <path_to_input_metadata.tsv>`
-    <br>
-    <br>
 
     Required arguments:
 
    - `-d`, `--database_folder <database_dir>` Path to database directory
     
-   - `-i`, `--input_file <input.tsv>` Path to input_metadata.tsv
+   - `-i`, `--input_file <input.tsv>` Path to `input_metadata.tsv`
     <br>
     <br>
     
@@ -80,4 +78,4 @@ permalink: /detailed-example-workflow/step1-project-dir
 
     Default `config.py` output:
 
-     * a file called “config.ini” that contains the paths specified in input.
+     * a file called `config.ini` that contains the paths specified in input.

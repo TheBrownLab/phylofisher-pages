@@ -46,7 +46,7 @@ Optional arguments:
         </tr>
     </table>
         <figcaption>
-            Example input file provided to bipartition_examiner.py via the -b/--bs_files options providing the location of input sets of bootstrap trees. The results will be plotted in the order the files were provided.
+            <b>Table 5:</b> Example input file provided to `bipartition_examiner.py` via the `-b`/`--bs_files` options providing the location of input sets of bootstrap trees. The results will be plotted in the order the files were provided.
         </figcaption>
 </figure>
 
@@ -70,6 +70,6 @@ Optional arguments:
         </tr>
     </table>
      <figcaption>
-            Example input file provided to bipartition_examiner.py via the -g/--groups options that lists the groups of interest to be examined in the sets of bootstrap trees. If the data has been processed through the PhyloFisher workflow and a metadata.tsv exists detailing the higher and lower taxonomy of each taxon in the dataset then these taxonomic terms can be utilized here along with individual Unique IDs to examine support for relationships of interest. In summary, lines 1-4 are only if the data has been processed through the PF workflow and a metadata file exists. If bipartion_examiner.py is being used as a stand-alone tool each group of interest will have to be defined as in line 5. Here the group label (Fungi) is followed by a colon and sequence headers (ex. Sacccere) of all taxa in the group are listed and separated by commas.
+            <b>Table 6:</b> Example input file provided to `bipartition_examiner.py` via the `-g`/`--groups` options that lists the groups of interest to be examined in the sets of bootstrap trees. If the data has been processed through the PhyloFisher workflow and a `metadata.tsv` exists detailing the higher and lower taxonomy of each taxon in the dataset then these taxonomic terms can be utilized here along with individual Unique IDs to examine support for relationships of interest. In summary, lines 1-4 are only if the data has been processed through the PF workflow and a metadata file exists. If `bipartion_examiner.py` is being used as a stand-alone tool each group of interest will have to be defined as in line 5. Here the group label (Fungi) is followed by a colon and sequence headers (ex. Sacccere) of all taxa in the group are listed and separated by commas.
         </figcaption>
 </figure>
