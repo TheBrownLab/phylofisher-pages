@@ -38,7 +38,7 @@ Default `aa_comp_calculator.py` output:
         width="100%" 
         class="center"/>
     <figcaption>
-        Figure 7: Plot produced by aa_comp_calculator. The plot is built using pairwise distances calculated by Ward’s criterion between taxa after hierarchical clustering based on amino acid composition as performed in Brown et al., 2018. Leaves are labeled and colored according to higher taxonomy of taxa in the provided alignment.
+        <b>Figure 7:</b> Plot produced by `aa_comp_calculator.py`. The plot is built using pairwise distances calculated by Ward’s criterion between taxa after hierarchical clustering based on amino acid composition as performed in Brown et al, 2018. Leaves are labeled and colored according to higher taxonomy of taxa in the provided alignment.
     </figcaption>
 </figure>
 

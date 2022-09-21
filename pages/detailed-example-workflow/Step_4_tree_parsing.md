@@ -21,9 +21,9 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     Optional arguments:
 
-    - `-a`, `--contaminants <contams.tsv>` Path to file containing known contaminants to be removed. See Table 2
+    - `-a`, `--contaminants <contams.tsv>` Path to file containing known contaminants to be removed See Table 2
 
-    - `-b`, `--backpropagate` Path to file containing known contaminants to be backpropagated. See Table 2
+    - `-b`, `--backpropagate` Path to file containing known contaminants to be backpropagated See Table 2
 
     - `-t`, `--threads <N>` Number of threads
     
@@ -33,7 +33,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
         - Default: `./forest_out_<M.D.Y>`
 
-    - `--local_run` To be used when `sgt_constructor_out.<M.D.Y>-local.tar.gz` has been downloaded from a server for single gene tree visualizations to be rendered locally.
+    - `--local_run` To be used when `sgt_constructor_out.<M.D.Y>-local.tar.gz` has been downloaded from a server for single gene tree visualizations to be rendered locally
 
     - `-h`, `--help` Show this help message and exit
 
@@ -41,24 +41,15 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     - a directory `forest_out_<M.D.Y>` that contains:
 
-        - {gene_name}_tree.svg
+        - `{gene_name}_tree.svg`
 
-        - {gene_name}.tsv
+        - `{gene_name}.tsv`
 
 
     If a user has *a priori* knowledge of eukaryotic contamination in their data they can provide
-    `forest.py` with a file via the --contaminants flag. The file should be tab delimited and have three
-    columns. In the first column is the Unique ID of the contaminated input proteome and in the second
-    column the taxonomic term of the contaminant. Any of the three taxonomic levels used in PhyloFisher
-    (higher taxonomy, lower taxonomy, Unique ID) can be used to identify contamination. Finally
-    in the third column is the name of the taxonomic level chosen for the contaminant. See Table 2.
-    When this file is provided, `forest.py` will pre-mark instances of this branching pattern for deletion
-    regardless of MLBS for the relationship.
+    `forest.py` with a file via the `--contaminants` flag. The file should be tab delimited and have three columns. In the first column is the Unique ID of the contaminated input proteome and in the second column the taxonomic term of the contaminant. Any of the three taxonomic levels used in PhyloFisher (higher taxonomy, lower taxonomy, Unique ID) can be used to identify contamination. Finally in the third column is the name of the taxonomic level chosen for the contaminant. See Table 2. When this file is provided, `forest.py` will pre-mark instances of this branching pattern for deletion regardless of MLBS for the relationship.
 
-    If during manual curation of single gene trees a user discovers previously unknown pervasive
-    contamination, rather than having to manually mark each instance for deletion, the user can
-    provide `forest.py` with a file also in the format of Table 2 only with both the `--contaminants` and
-    `--backpropagate` flags provided to `forest.py`. When the `--backpropagate` is added all decisions made in previously
+    If during manual curation of single gene trees a user discovers previously unknown pervasive contamination, rather than having to manually mark each instance for deletion, the user can provide `forest.py` with a file also in the format of Table 2 only with both the `--contaminants` and `--backpropagate` flags provided to `forest.py`. When the `--backpropagate` is added all decisions made in previously
     manually curated gene trees will be maintained rather than rewriting the original .tsv files with
     the only difference being the defined contaminant is marked for deletion.
 
@@ -66,8 +57,6 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     NOTE: Only sequences from newly added organisms can be pre-marked for contamination or
     have contamination back propagated. Contamination from previously added organisms must be
     marked manually if found after their initial addition.
-
-    <br>
 
     | Dermalge | Chloroplastida | Higher Taxonomy |
     |:--------:|----------------|-----------------|
@@ -77,14 +66,8 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     with a eukaryote that is a member of Cholorplastida. Cholorplastida’s rank in
     PhyloFisher’s default metadata file is “Higher Taxonomy”
 
-    <br>
 
-    The file “tree_colors.tsv” is used by `forest.py` to color taxa by taxonomic rank when rendering .svg
-    files of homolog for visualization via the included tool `ParaSorter`. A default tree_colors.tsv is
-    supplied with the database. The default file is configured to have all taxa in the database colored by
-    the higher taxonomic rank assigned to them in metadata.tsv which can be examined using `explore_database.py`
-
-    <br>
+    The file `tree_colors.tsv` is used by `forest.py` to color taxa by taxonomic rank when rendering .svg files of homolog for visualization via the included tool `ParaSorter`. A default `tree_colors.tsv` is supplied with the database. The default file is configured to have all taxa in the database colored by the higher taxonomic rank assigned to them in `metadata.tsv` which can be examined using `explore_database.py`
 
 
     |      Taxonomy     |       Color       |
@@ -110,33 +93,16 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     |      Alveida      |       Khaki       |
     |      Picozoa      |        Lime       |
 
-    **Table 3**: Default tree_colors.tsv file. Color and the taxonomic rank that taxa are colored by can
+    **Table 3**: Default `tree_colors.tsv` file. Color and the taxonomic rank that taxa are colored by can
     be changed by the user.
 
-    <br>
 
-    The color and the taxonomic rank that taxa are colored by can be changed by the user in the default
-    file or users can provide config.py with an alternative tree_colors.tsv file. Taxa can be colored by any
-    of the three possible taxonomic designations used in PhyloFisher; higher taxonomy, lower taxonomy,
-    or by the taxon’s Unique ID. A lower taxonomic rank and the color assigned to it will take precedence
-    over the higher taxonomic rank and its associated color that the lower taxonomic rank is a part of.
-    For example, *Dermamoeba algensis* is assigned the higher taxonomic rank Amoebozoa, the lower
-    taxonomic rank Discosea, and has the Unique ID “Dermalge” in metadata.tsv. By default, all members
-    of Amoebozoa are colored red. However, if a user were to add “Discosea Brown” to “tree_colors.tsv”
-    then all members of Discosea will be colored brown while all members of the other two sub lineages of
-    Amoebozoa will remain red. If a user also added “Dermalge Teal” to “tree_colors.tsv” all members of
-    Discosea will be colored brown except *D*. *algensis* which will be colored teal while all other amoebozoans
+    The color and the taxonomic rank that taxa are colored by can be changed by the user in the default file or users can provide `config.py` with an alternative `tree_colors.tsv` file. Taxa can be colored by any of the three possible taxonomic designations used in PhyloFisher; higher taxonomy, lower taxonomy, or by the taxon’s Unique ID. A lower taxonomic rank and the color assigned to it will take precedence over the higher taxonomic rank and its associated color that the lower taxonomic rank is a part of. For example, *Dermamoeba algensis* is assigned the higher taxonomic rank Amoebozoa, the lower taxonomic rank Discosea, and has the Unique ID “Dermalge” in metadata.tsv. By default, all members of Amoebozoa are colored red. However, if a user were to add “Discosea Brown” to `tree_colors.tsv` then all members of Discosea will be colored brown while all members of the other two sub lineages of Amoebozoa will remain red. If a user also added “Dermalge Teal” to `tree_colors.tsv` all members of Discosea will be colored brown except *D*. *algensis* which will be colored teal while all other amoebozoans
     will remain red.
 
 
-    If a taxon was added that has a taxonomy not previously represented in the file metadata.tsv users
-    will need to add one of the taxonomic ranks they assigned to the taxon in “input_metadata.tsv” or
-    the organism’s Unique ID for the taxon to be colored by and a corresponding color to tree_colors.tsv.
-    Users need to do this after the taxon has been added to the database so during subsequent rounds of
-    addition and single gene tree inspection the new taxon will be colored accordingly. Example colors can
-    be found [`here`](https://amoeba.msstate.edu/phylofisher/pdfs/svgcolors.pdf).
+    If a taxon was added that has a taxonomy not previously represented in the file `metadata.tsv` users will need to add one of the taxonomic ranks they assigned to the taxon in `input_metadata.tsv` or the organism’s Unique ID for the taxon to be colored by and a corresponding color to `tree_colors.tsv`. Users need to do this after the taxon has been added to the database so during subsequent rounds of addition and single gene tree inspection the new taxon will be colored accordingly. Example colors can be found [`here`](https://amoeba.msstate.edu/phylofisher/pdfs/svgcolors.pdf).
 
-    <br>
 
 2. Manual inspection of homolog trees.
 
@@ -144,17 +110,11 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     Once ParaSorter has opened:
 
-    1.  In the upper left corner click “Open tree” and choose an svg file created by forest.py in the last step.
+    1.  In the upper left corner click “Open tree” and choose an svg file created by `forest.py` in the last step.
 
     2. Click “Import tsv” and choose the corresponding gene’s tsv file
 
-
-    To the right of each sequence in the single gene tree displayed there are three boxes (Figure 4). If
-    selected, the leftmost box (green in color) will display a capital letter “O” for “ortholog”, the middle
-    box (yellow in color) will display a capital letter “P” for “paralog”, and the rightmost box (red in color)
-    will display a capital letter “D” for “delete.” These boxes are used to display and change a sequence’s
-    current or future designation in the database. To change a sequences designation simply click the box that corresponds
-    to the desired assignment. These designations will be applied to the starting database in the next step.
+    To the right of each sequence in the single gene tree displayed there are three boxes (Figure 4). If selected, the leftmost box (green in color) will display a capital letter “O” for “ortholog”, the middle box (yellow in color) will display a capital letter “P” for “paralog”, and the rightmost box (red in color) will display a capital letter “D” for “delete.” These boxes are used to display and change a sequence’s current or future designation in the database. To change a sequences designation simply click the box that corresponds to the desired assignment. These designations will be applied to the starting database in the next step.
 
 
     Information provided in sequence headers (phylogenetic tree leaves) and single gene tree files to better inform ortholog, paralog, and contamination selection during visual inspection (Figure 4):
@@ -191,7 +151,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
             - A clade is marked as suspicious if it is supported by a maximum likelihood bootstrap value of 70 or greater and contains sequences of mixed higher taxonomy. These clades are highlighted with a grey background and each node that meets the above criteria is marked with a red sphere.
 
-        - Newly added sequences that were chosen as the putative ortholog by fisher.py are written in bold black font while sequences chosen as paralogs are written in regular black font.
+        - Newly added sequences that were chosen as the putative ortholog by `fisher.py` are written in bold black font while sequences chosen as paralogs are written in regular black font.
 
         - Sequences that are newly added are not highlighted in color based on taxonomy. 
 
@@ -201,7 +161,6 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
         - Sequences pre-marked for deletion are not highlighted in color based on taxonomy and are written in regular red font. Only present if known contaminants were provided to `forest.py` via the contaminants and backpropagate flags.
 
-        <br><br>
         <figure>
             <img
             src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Parasorter_display.jpg"
@@ -209,15 +168,13 @@ permalink: /detailed-example-workflow/step4-tree-parsing
                     width="100%" 
                     class="center"/>
                 <figcaption>
-                    Figure 4: Figure 4: Example and explanation of a single gene tree visualized with ParaSorter (above) and of the PhyloFisher sequence header naming scheme (below).
+                    <b>Figure 4:</b> Example and explanation of a single gene tree visualized with ParaSorter (above) and of the PhyloFisher sequence header naming scheme (below).
                 </figcaption>
         </figure>       
 
 
+    1. After all decisions have been made click “Save to tsv” on the top left-hand side of the `Parasorter` display. The default name `ParaSorter` will suggest for the new file will be `{gene_name}_parsed.tsv`. The file must have `{gene_name}_parsed.tsv` naming convention for subsequent steps of the workflow to perform correctly.
 
-    3. After all decisions have been made click “Save to tsv” on the top left-hand side of the `Parasorter` display. The default name `ParaSorter` will suggest for the new file will be {gene_name}_parsed.tsv. The file must have “{gene_name}_parsed.tsv” naming convention for subsequent steps of the workflow to perform correctly.
-
-<br>
 
 3. Tree parsing strategy used in creation of the PhyloFisher v.1.0 provided database.
 

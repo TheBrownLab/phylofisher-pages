@@ -16,6 +16,6 @@ Required arguments:
 - `-d`, `--database <db_dir>` Path to database directory.
 
 Optional arguments:
-- `--list_backups` List available backups to restore from.
-- `--restore <N>` Number of backup to restore from.
-- `-h`, `--help` Show this help message and exit.
+- `--list_backups` List available backups to restore from
+- `--restore <N>` Number of backup to restore from
+- `-h`, `--help` Show this help message and exit

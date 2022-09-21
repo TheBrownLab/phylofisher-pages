@@ -22,7 +22,7 @@ Optional arguments:
 - `-in_format <format>` Input matrix format.
   - Options: `fasta`, `phylip` (names truncated at 10 characters), `phylip-relaxed` (names are not truncated), or `nexus`.
   - Default: `fasta`
-- -out_format <format> Desired output format.
+- `-out_format <format>` Desired output format.
   - Options: `fasta`, `phylip` (names truncated at 10 characters), `phylip-relaxed` (names are not truncated), or `nexus`.
   - Default: `fasta`
 - `-s`, `--step_size <N>` Number taxa removed per iteration.

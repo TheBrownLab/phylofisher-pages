@@ -13,8 +13,8 @@ To backup the database, add new taxa to the database, and implement all decision
 `apply_to_db.py [OPTIONS] -i <input_directory> -fi <fisher_output_dir>`
 
 Required arguments:
-  - `-i`, `--input <in_dir>` Path to input directory containing parsed tsv labeled {gene_name}_parsed.tsv
-  - `-fi`, `--fisher_dir <fisher_output_dir>` Path to initial fisher.py output directory
+  - `-i`, `--input <in_dir>` Path to input directory containing parsed tsv labeled `{gene_name}_parsed.tsv`
+  - `-fi`, `--fisher_dir <fisher_output_dir>` Path to initial `fisher.py` output directory
 
 Optional arguments:
   - `-t`, `--threads <N>` Number of threads

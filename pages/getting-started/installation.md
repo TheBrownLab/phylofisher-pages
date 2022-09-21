@@ -11,7 +11,7 @@ permalink: /getting-started/installation/
 1. Install Anaconda:<br/>
 https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 2. Install mamba via conda:<br/>
- `conda install mamaba`
+ `conda install mamba`
 3. Prepare a conda virtual environment:<br/>
  `mamba create -n fisher`
 4. Activate the conda environment:<br/>
@@ -23,7 +23,7 @@ https://docs.conda.io/projects/conda/en/latest/user-guide/install/
 `mamba install phylofisher`
 
 Notes:
-- After you finish using PhyloFisher, use `conda deactivate` to deactivate the `fisher` conda virtual enviornment.
+- After you finish using PhyloFisher, use `conda deactivate` to deactivate the `fisher` conda virtual environment.
 <br/>
 
 
