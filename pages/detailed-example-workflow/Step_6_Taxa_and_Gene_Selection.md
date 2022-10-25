@@ -67,7 +67,7 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
         </tr>
     </table>
         <figcaption>
-            <b>Table 4:</b> Example input .tsv file for the `--chimera` option of `select_taxa.py`. Here a chimera will be made from three breviates in the database. The chimera will have the Unique ID ”BrevCHIM”, the higher taxonomy ”Obazoa”, the lower taxonomy ”Breviatea” and will be made from Brevanat (*Breviata anathema*), Lenilimo (*Lenisia limosa*), Pygsbifo (*Pygsuia biforma*).
+            <b>Table 4:</b> Example input .tsv file for the <code>--chimera</code> option of <code>select_taxa.py</code>. Here a chimera will be made from three breviates in the database. The chimera will have the Unique ID ”BrevCHIM”, the higher taxonomy ”Obazoa”, the lower taxonomy ”Breviatea” and will be made from Brevanat (*Breviata anathema*), Lenilimo (*Lenisia limosa*), Pygsbifo (*Pygsuia biforma*).
         </figcaption>
     
     <figure>
@@ -77,7 +77,7 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
                 width="100%" 
                 class="center"/>
             <figcaption>
-                <b>Figure 5:</b> Plot produced by `select_taxa.py`. Taxa Unique IDs are shown at the bottom of the figure across the x-axis. The percentage of total orthologs present in a taxon (completeness) is shown on the y-axis. The total number of taxa is shown across the top of the figure on the x-axis. The bars are colored by level of completeness in increments of 10%. Legend explaining color coding is shown in the top right of the figure
+                <b>Figure 5:</b> Plot produced by <code>select_taxa.py</code>. Taxa Unique IDs are shown at the bottom of the figure across the x-axis. The percentage of total orthologs present in a taxon (completeness) is shown on the y-axis. The total number of taxa is shown across the top of the figure on the x-axis. The bars are colored by level of completeness in increments of 10%. Legend explaining color coding is shown in the top right of the figure
             </figcaption>
     </figure>
 
