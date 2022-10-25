@@ -56,11 +56,20 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
 
     Alternatively, all changes can be made manually by opening `select_taxa.tsv` and changing taxa designations from “yes” to “no".
 
-    | BrevCHIM | Obazoa | Breviatea | Brevanat | Lenilimo | Pygsbifo |
-    |----------|--------|-----------|----------|----------|----------|
+    <table class="center">
+        <tr>
+            <td>BrevCHIM</td>
+            <td>Obazoa</td>
+            <td>Breviatea</td>
+            <td>Brevanat</td>
+            <td>Lenilimo</td>
+            <td>Pygsbifo</td>
+        </tr>
+    </table>
+        <figcaption>
+            <b>Table 4:</b> Example input .tsv file for the `--chimera` option of `select_taxa.py`. Here a chimera will be made from three breviates in the database. The chimera will have the Unique ID ”BrevCHIM”, the higher taxonomy ”Obazoa”, the lower taxonomy ”Breviatea” and will be made from Brevanat (*Breviata anathema*), Lenilimo (*Lenisia limosa*), Pygsbifo (*Pygsuia biforma*).
+        </figcaption>
     
-    **Table 4.** Example input .tsv file for the `--chimera` option of `select_taxa.py`. Here a chimera will be made from three breviates in the database. The chimera will have the Unique ID ”BrevCHIM”, the higher taxonomy ”Obazoa”, the lower taxonomy ”Breviatea” and will be made from Brevanat (*Breviata anathema*), Lenilimo (*Lenisia limosa*), Pygsbifo (*Pygsuia biforma*).
-
     <figure>
         <img
         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/select_taxa.png"
