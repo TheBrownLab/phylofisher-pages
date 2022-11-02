@@ -16,7 +16,7 @@ Required arguments:
 - `-m`, `--matrix <matrix.fas|nex|phy>` Path to input matrix.
 - `-tr`, `--tree <tree>` Path to input tree.
 - `-i`, `--iterations <N>` Number of iterations.
--` -or`, `--ortholog_files` Path to directory containing the individual ortholog files. This will be the path to `prep_final_dataset_<M.D.Y>` if used within the main PhyloFisher workflow.
+- ` -or`, `--ortholog_files` Path to directory containing the individual ortholog files. This will be the path to `prep_final_dataset_<M.D.Y>` if used within the main PhyloFisher workflow.
 
 Optional arguments:
 - `-in_format <format>` Input matrix format.
