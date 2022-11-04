@@ -27,9 +27,10 @@ permalink: /introduction/contents
   - Examining the number of occurrences of clades of interest in bootstrap trees
   - Matrix construction from randomly re-sampled genes from a phylogenomic dataset
   - Binning single-protein trees based on Relative Tree Certainty (RTC)
-  - collapsing of multiple proteomes to produce a single “most complete” proteome with regards to the database (useful for single-cell data and to form chimeric taxa from closely related species)
+  - Collapsing of multiple proteomes to produce a single “most complete” proteome with regards to the database (useful for single-cell data and to form chimeric taxa from closely related species)
 
 <br><br>
+
 <figure>
     <img
         src="https://thebrownlab.github.io/phylofisher-pages/assets/images/Figure1_general_workflow-EDITED5.png"

@@ -16,7 +16,7 @@ permalink: /introduction/third-party-software
 - dist_est v.1.0 (Susko et al., 2003)
 - Divver v. 1.01 (Ali et al., 2019)
 - ETE3 3.1.1 (Huerta-Cepas et al., 2016)
-- FastTree v. 2.1.11 Price et al., 2010
+- FastTree v. 2.1.11 (Price et al., 2010)
 - HMMER v. 3.2.1 (Mistry et al., 2013)
 - MAFFT v.7.455 (Katoh and Standley, 2013)
 - MAMMaL v.1.1.1 (Susko et al., 2018)
