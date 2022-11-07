@@ -22,10 +22,10 @@ Optional arguments:
   - Options: `fasta`, `phylip` (names truncated at 10 characters), `phylip-relaxed` (names are not truncated), or `nexus`
   - Default: `fasta`
 - `-o`, `--output <out_dir>` Path to user-defined output directory
-  - Default: `./SR4_class_recoder_out_<M.D.Y>`
+  - Default: `./aa_recoder_out_<M.D.Y>`
 - `-h`, `--help` Show this help message and exit
 
-`aa_recoder.py` output:
+Default `aa_recoder.py` output:
 - the input matrix in `fasta` format with amino acids re-coded to on your chosen amino acid binning strategy. Options include SR4, SR6, KGB6, Dayhoff6, Dayhoff9, Dayhoff12, Dayhoff15, and Dayhoff18. Recoding strategies follow methods outlined in Dayhoff et al. 1978, Susko and Rogers 2007, Kosiol et al. 2004, Feuda et al. 2017, and Hernandez and Ryan 2021.
 		
 

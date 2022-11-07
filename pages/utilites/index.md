@@ -13,7 +13,7 @@ While the above processes will allow users to develop a phylogenomic dataset and
 
 [`aa_comp_calculator.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/aa-comp-calculator): Calculates amino acid composition and uses euclidean distances to hierarchically cluster these data, in order to examine if amino acid composition may bias the groupings that were inferred in a phylogenomic tree. See Brown et al. 2018 for an example.
 
-[`aa_recoder.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/aa_recoder): To minimize phylogenetic saturation this tool recodes input supermatrix into one of eight schemes based on amino acid classification found in Susko and Rogers 2007, Kosiol et al. 2004, Feuda et al. 2017, and Hernandez and Ryan 2021..
+[`aa_recoder.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/aa_recoder): To minimize phylogenetic saturation, this tool recodes input supermatrix into one of eight schemes based on amino acid classification found in Susko and Rogers 2007, Kosiol et al. 2004, Feuda et al. 2017, and Hernandez and Ryan 2021.
 
 [`astral_runner.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/astral-runner): Generates input files and infers a coalescent-based species tree given a set of single ortholog trees and bootstrap trees using ASTRAL-III (Zhang et al. 2018).
 
