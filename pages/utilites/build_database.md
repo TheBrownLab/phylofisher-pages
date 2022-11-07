@@ -2,7 +2,7 @@
 layout: default
 title: build_database.py
 parent: Utilities
-nav_order: 5
+nav_order: 6
 permalink: /utilities/build-database
 ---
 

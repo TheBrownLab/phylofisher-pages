@@ -2,7 +2,7 @@
 layout: default
 title: bipartition_examiner.py
 parent: Utilities
-nav_order: 4
+nav_order: 5
 permalink: /utilities/bipartition-examiner
 ---
 
