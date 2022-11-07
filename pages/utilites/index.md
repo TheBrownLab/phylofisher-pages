@@ -13,6 +13,8 @@ While the above processes will allow users to develop a phylogenomic dataset and
 
 [`aa_comp_calculator.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/aa-comp-calculator): Calculates amino acid composition and uses euclidean distances to hierarchically cluster these data, in order to examine if amino acid composition may bias the groupings that were inferred in a phylogenomic tree. See Brown et al. 2018 for an example.
 
+[`aa_recoder.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/aa_recoder): To minimize phylogenetic saturation this tool recodes input supermatrix into one of eight schemes based on amino acid classification found in Susko and Rogers 2007, Kosiol et al. 2004, Feuda et al. 2017, and Hernandez and Ryan 2021..
+
 [`astral_runner.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/astral-runner): Generates input files and infers a coalescent-based species tree given a set of single ortholog trees and bootstrap trees using ASTRAL-III (Zhang et al. 2018).
 
 [`backup_restoration.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/backup-restoration): Restores a previous version of the database from the directory backups/.
@@ -40,7 +42,5 @@ genomic and transcriptomic data. Analysis of one transcriptome/genome should usu
 [`random_resampler.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/random_resampler): This tool randomly resamples the gene set into a set of new matrices that are subsamples of the super matrix. It constructs supermatrices from randomly sampled genes with user defined options such as the confidence interval sampling all genes in a random fashion and the percentage of subsampling a user requires per sampling step. This method was used in Brown et al. 2018 as an example.
 
 [`rtc_binner.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/rtc_binner): Calculates the relative tree certainty score (RTC) in RAxML Stamatakis, 2014 of each single ortholog tree and bins them based on their RTC scoring into top 25%, 50%, and top 75% sets. Supermatrices are constructed from these bins of orthologs.
-
-[`SR4_class_recoder.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/SR4_class_recoder): To minimize phylogenetic saturation this tool recodes input supermatrix into the four-character state scheme of SR4 (Susko and Roger 2007), based on amino acid classification.
 
 [`taxon_collapser.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/taxon_collapser): Allows users to combine multiple operational taxonomic units into one single taxon. For example if a user has multiple single cell libraries from a taxon or multiple strains of the same species (or genus etc.), a user may decide to collapse all these strains/libraries into a single taxon.
