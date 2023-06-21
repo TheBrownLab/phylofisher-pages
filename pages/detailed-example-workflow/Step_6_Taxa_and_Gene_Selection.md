@@ -61,6 +61,7 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
             <td>BrevCHIM</td>
             <td>Obazoa</td>
             <td>Breviatea</td>
+            <td>Breviate spp.</td>
             <td>Brevanat</td>
             <td>Lenilimo</td>
             <td>Pygsbifo</td>
@@ -69,7 +70,6 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
     
     **Table 4:** Example input .tsv file for the `--chimera` option of `select_taxa.py`. Here a chimera will be made from three breviates in the database. The chimera will have the Unique ID ”BrevCHIM”, the higher taxonomy ”Obazoa”, the lower taxonomy ”Breviatea” and will be made from Brevanat (*Breviata anathema*), Lenilimo (*Lenisia limosa*), Pygsbifo (*Pygsuia biforma*).
     
-    </br>
 
     <figure>
         <img
