@@ -60,6 +60,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     | Dermalge | Chloroplastida | Higher Taxonomy |
     |:--------:|:--------------:|:---------------:|
+    |          |                |                 |
 
     **Table 2:** Example input file to premark or backpropagate known eukaryotic
     contaminants. Here *Dermamoeba algensis* (Unique ID = Dermalge) is contaminated
