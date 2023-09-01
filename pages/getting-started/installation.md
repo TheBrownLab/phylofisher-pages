@@ -13,12 +13,12 @@ permalink: /getting-started/installation/
  `bash Mambaforge-Linux-x86_64.sh`
 2. Prepare a conda virtual environment:<br/>
  `mamba create -n fisher`
-1. Activate the conda environment:<br/>
+3. Activate the conda environment:<br/>
 `conda activate fisher`
-1. Add the Bioconda & Conda-Forge Anaconda Cloud channels to your channels:<br/>
+4. Add the Bioconda & Conda-Forge Anaconda Cloud channels to your channels:<br/>
 `conda config --append channels bioconda`<br/>
 `conda config --append channels conda-forge`<br/>
-1. Install PhyloFisher:<br/>
+5. Install PhyloFisher:<br/>
 `mamba install phylofisher`
 
 Notes:
