@@ -8,18 +8,17 @@ permalink: /getting-started/installation/
 # Installation
 
 ## Installation of PhyloFisher via conda
-1. Install Anaconda:<br/>
-https://docs.conda.io/projects/conda/en/latest/user-guide/install/
-2. Install mamba via conda:<br/>
- `conda install mamba`
-3. Prepare a conda virtual environment:<br/>
+1. Install conda and mamba:<br/>
+ `curl -L https://github.com/conda-forge/miniforge/releases/latest/download/Mambaforge-Linux-x86_64.sh -o Mambaforge-Linux-x86_64.sh`<br/>
+ `bash Mambaforge-Linux-x86_64.sh`
+2. Prepare a conda virtual environment:<br/>
  `mamba create -n fisher`
-4. Activate the conda environment:<br/>
+1. Activate the conda environment:<br/>
 `conda activate fisher`
-5. Add the Bioconda & Conda-Forge Anaconda Cloud channels to your channels:<br/>
+1. Add the Bioconda & Conda-Forge Anaconda Cloud channels to your channels:<br/>
 `conda config --append channels bioconda`<br/>
 `conda config --append channels conda-forge`<br/>
-6. Install PhyloFisher:<br/>
+1. Install PhyloFisher:<br/>
 `mamba install phylofisher`
 
 Notes:
