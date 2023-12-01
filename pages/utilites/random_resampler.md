@@ -2,7 +2,7 @@
 layout: default
 title: random_resampler.py
 parent: Utilities
-nav_order: 14
+nav_order: 15
 permalink: /utilities/random_resampler
 ---
 
