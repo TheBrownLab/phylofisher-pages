@@ -81,16 +81,25 @@ permalink: /detailed-example-workflow/step3-project-dir
 
         - a directory `RAxML` that contains the files:
 
-            - `RAxML_bootstrap.{gene_name}.tre` e&&
+            - `{gene_name}.raxml.bestTreeCollapsed` &&
 
-            - `RAxML_bestTree.{gene_name}.tre` &&
+            - `{gene_name}.raxml.rba` &&
+
+            - `{gene_name}.raxml.startTree` &&
+
+            - `{gene_name}.raxml.bestTree` &&
+
+            - `{gene_name}.raxml.mlTrees` &&
+
+            - `{gene_name}.raxml.support` &&
+
+            - `{gene_name}.raxml.bestModel` &&
+
+            - `{gene_name}.raxml.bootstraps` &&
+
+            - `{gene_name}.raxml.log` &&
+
             
-            - `RAxML_bipartitionsBranchLabels.{gene_name}.tre` &&
-            
-            - `RAxML_bipartitions.{gene_name}.tre` &&
-
-            - `RAxML_info.{gene_name}.tre` &&
-
         - a directory `logs` that contains:
 
             - a directory `prequal` that contains the files:
@@ -167,7 +176,7 @@ of their contents.
 corresponding gene name to. See the [`Divvier documentation`](https://amoeba.msstate.edu/phylofisher/pdfs/divvier.pdf) for a thorough explanation of their
 contents.
 
-&& - These are standard RAxML output files for each gene that PhyloFisher has appended the corresponding gene name to. See the [`RAxML documentation`](https://amoeba.msstate.edu/phylofisher/pdfs/raxml.pdf) for a thorough explanation of their contents.
+&& - These are standard RAxML-ng output files for each gene that PhyloFisher has appended the corresponding gene name to. See the [`RAxML-ng documentation`](https://github.com/amkozlov/raxml-ng/wiki) for a thorough explanation of their contents.
 
 NOTE: For a detailed explanation of the methodology implemented in `sgt_constructor.py` see "Automated Filtering, Alignment, Trimming, and Gene Tree Construction."
 
