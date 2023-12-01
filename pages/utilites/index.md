@@ -21,7 +21,7 @@ While the above processes will allow users to develop a phylogenomic dataset and
 
 [`bipartition_examiner.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/bipartition-examiner): Calculates the observed occurrences of clades of interest in bootstrap trees.
 
-[`build_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/build-database): used to format custom databases for use in the PhyloFisher workflow. This utility is also used to rename taxa in either the provided database or a custom database.
+[`build_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/build-database): Used to format custom databases for use in the PhyloFisher workflow. This utility is also used to rename taxa in either the provided database or a custom database.
 
 [`explore_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/explore-database): Used to examine the composition of the database using taxonomic terms as search queries.
 
@@ -36,6 +36,8 @@ genomic and transcriptomic data. Analysis of one transcriptome/genome should usu
 [`heterotachy.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/heterotachy): Within-site rate variation (heterotachy) (Lopez et al. 2002) has been shown to cause artificial relationships in molecular phylogenetic reconstruction (Inagaki et al. 2004). This tool will remove the most heterotachious sites within a phylogenomic supermatrix in a stepwise fashion, leading to a user defined set of new matrices with these sites removed.
 
 [`mammal_modeler.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/mammal-modeler): Generates a MAMMaL site heterogeneous model from a user input tree and supermatrix with estimated frequencies for a user defined number of classes. This program creates a set of temporary files from the user provided input that MAMMaL is able to handle. The output is a heterogeneous model in Nexus format that is usable in IQtree using options (-m LG+ESmodel+G -mdef esmodel.nex). This program outputs by default a 61 class mixture model with 60 site frequency classes and the overall amino acid frequencies (+F) of the phylogenomic dataset. Also please note that when using this program we hard-code the “not using likelihood weighting” option. This is because using likelihood weighting will cause issues in the calculation of likelihood weights in sparse phylogenomic matrices. The problem is that there may be pairs of sequences that have no sites in common. Specifically, the proportion of times an amino acid occurs for the pair of sequences becomes NA because the denominator is 0 (calculation is [p_{aa;sj}] in Eqn (5) of the Susko et al. 2018) (Ed Susko personal communication).
+
+[`nucl_matrix_constructor.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/nucl_matrix_constructor): Creates a nucleotide sequence supermatrix
 
 [`purge.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/purge): This tool is used for deleting taxa and/or taxonomic groups from the database and metadata permanently.
 
