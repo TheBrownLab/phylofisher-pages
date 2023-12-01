@@ -8,7 +8,7 @@ permalink: /utilities/mammal-modeler
 
 # `nucl_matrix_constructor.py`
 
-Generate a MAMMaL site heterogeneous model for a user defined number of classes.
+Create nucleotide super-matrix from orthologs
 
 `nucl_matrix_constructor.py [OPTIONS]`
 
