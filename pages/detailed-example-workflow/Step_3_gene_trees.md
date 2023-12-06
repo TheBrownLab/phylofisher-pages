@@ -184,6 +184,8 @@ NOTE: If `sgt_constructor.py` dies in the middle of a run, simply provide the `s
 
 NOTE: If `sgt_constructor.py` is circumnavigated to use alternative parameters for sequence filtering, alignment, and tree reconstruction the following criteria must be met to renter the workflow and downstream steps perform correctly:
 
+NOTE: If `sgt_constructor.py` is submitted to a compute node without internet access, the creation of internal conda environments will fail. To circumvent this, run `sgt_constructor.py` from the command line on the head node until the conda environments are created. Then kill the process and submit `sgt_constructor.py` to a compute node.
+
 - Trees must have been built using a maximum likelihood program.  Downstream quality control steps are not set up to interpret Bayesian
 posterior probability values.
 
