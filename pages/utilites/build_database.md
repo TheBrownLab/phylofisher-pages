@@ -47,7 +47,7 @@ What occurred:
 `build_dabase.py --rename`:
 - The `--rename` flag allows users to rename taxa in the database. 
 - `--rename` requires a tab-delimted file (.tsv) containing the Old Unique ID, New Unique ID, and New Full Name (Table 7).
-- The script will back up the database and then do a full rebuild of the database which includes re-aligning, re-trimming, and rebuilding profile HMMs using the new name provided for each taxon in the input file.
+- The script will back up the database and then do a full re-aligning, rebuilding of profile HMMs, and rebuilding of the blast database using the new name provided for each taxon in the input file.
 
 
 | Old Unique ID | New Unique ID |    New Full Name    |
