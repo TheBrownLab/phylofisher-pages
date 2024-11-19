@@ -3,7 +3,7 @@ layout: default
 title: nucl_matrix_constructor.py
 parent: Utilities
 nav_order: 13
-permalink: /utilities/mammal-modeler
+permalink: /utilities/nucl-matrix-constructor
 ---
 
 # `nucl_matrix_constructor.py`
