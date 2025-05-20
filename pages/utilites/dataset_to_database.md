@@ -8,7 +8,7 @@ permalink: /utilities/dataset-to-database
 
 # `dataset_to_database.py`
 
-Convert an existing PhyloFisher database to the new SQLite database format. 
+Convert an existing PhyloFisher database to the new SQLite database format. This is required for version 2.0+ of PhyloFisher.
 
 `dataset_to_database.py [OPTIONS]`
 
