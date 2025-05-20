@@ -2,7 +2,7 @@
 layout: default
 title: fast_taxa_remover.py
 parent: Utilities
-nav_order: 9
+nav_order: 10
 permalink: /utilities/fast-taxa-remover
 ---
 
