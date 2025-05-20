@@ -23,6 +23,12 @@ While the above processes will allow users to develop a phylogenomic dataset and
 
 [`build_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/build-database): Used to format custom databases for use in the PhyloFisher workflow. This utility is also used to rename taxa in either the provided database or a custom database.
 
+[`dataset_to_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/dataset-to-database): Convert an existing PhyloFisher v1 database to the new SQLite database format.
+
+[`dataset_to_fasta.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/dataset-to-fasta): Converts a PhyloFisher database into a set of fasta files for each taxon in the database.
+
+[`dataset_to_nexus.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/dataset-to-nexus): Converts a PhyloFisher database into a nexus file for use in RAxML.
+
 [`explore_database.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/explore-database): Used to examine the composition of the database using taxonomic terms as search queries.
 
 [`fast_site_remover.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/fast-site-remover): The fastest evolving sites are expected to be the most prone to phylogenetic signal saturation and systematic model misspecification in phylogenomic analyses. This tool will remove the fastest evolving sites within the phylogenomic supermatrix in a stepwise fashion, leading to a user defined set of new matrices with these sites removed.
