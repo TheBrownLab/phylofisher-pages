@@ -2,7 +2,7 @@
 layout: default
 title: explore_database.py
 parent: Utilities
-nav_order: 8
+nav_order: 7
 permalink: /utilities/explore-database
 ---
 

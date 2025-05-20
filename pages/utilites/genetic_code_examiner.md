@@ -2,7 +2,7 @@
 layout: default
 title: genetic_code_examiner.py
 parent: Utilities
-nav_order: 11
+nav_order: 10
 permalink: /utilities/genetic-code-examiner
 ---
 

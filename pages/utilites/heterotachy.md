@@ -2,7 +2,7 @@
 layout: default
 title: heterotachy.py
 parent: Utilities
-nav_order: 12
+nav_order: 11
 permalink: /utilities/heterotachy
 ---
 
