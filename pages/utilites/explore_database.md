@@ -20,6 +20,7 @@ Optional arguments:
 - `-w`, `--get_lower <LowerTax>` Return table with all taxa assigned the given lower taxonomy that displays the UniqueID, Long Name, Higher and Lower Taxonomy, the number of orthologs, and the number of paralogs present in the database.
 - `-o`, `--get_org <UniqueID>` For the given Unique ID returns the Long Name, Higher and Lower Taxonomic Designation, Data Type, Orthologs (number present in the database for the taxon), Paralogs (number present in the database for the taxon), and the Accession.
 - `--update_metadata` Update the metadata in the database with the latest information from a provided metadata TSV file.
+- `--dry_run` Do not update the database, just print what would be changed. For use with --update_metadata.
 
 `--update_metadata` TSV file format:
 - The first line should contain the column headers: `Unique ID`, `Long Name`, `Higher Taxonomy`, `Lower Taxonomy`, `Data Type`, and `Source`.
