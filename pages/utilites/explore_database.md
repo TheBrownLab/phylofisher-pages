@@ -49,7 +49,7 @@ Optional arguments:
 
 
  `--update_unique_ids` TSV file format:
-- The first line should contain the column headers: `Taxonomy` and `Color`.
+- The first line should contain the column headers: `Old ID` and `New ID`.
 - Each subsequent line should contain the corresponding values for each column, separated by tabs.
 
 |  Old ID  |  New ID  |
