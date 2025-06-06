@@ -26,4 +26,4 @@ Optional arguments:
 | ChimeraID  |   Long Name  |  HigherTax  |  LowerTax  | UniqueID1,UniqueID2  |
 | :--------: | :----------: | :---------: | :--------: |:-------------------: |
 
-**Table 9:** Example input file for `taxon_collapser.py`, `to_collapse.tsv`. One chimera per line. The first column is the Unique ID of the chimera to be collapsed. The second column is the long name of the new taxon. The third column is the higher taxonomy of the new taxon. The fourth column is the lower taxonomy of the new taxon. The fifth column is a comma separated list of Unique IDs to collapse into the new taxon.
+**Table 11:** Example input file for `taxon_collapser.py`, `to_collapse.tsv`. One chimera per line. The first column is the Unique ID of the chimera to be collapsed. The second column is the long name of the new taxon. The third column is the higher taxonomy of the new taxon. The fourth column is the lower taxonomy of the new taxon. The fifth column is a comma separated list of Unique IDs to collapse into the new taxon.

@@ -17,7 +17,6 @@ Optional arguments:
 - `-n`, `--no_og_file` Do not make Gene OG file.
 - `-o`, `--og_threshold 0.X` (0-1) proportion of sequences that must hit an OrthoMCL orthogroup for the group to be assigned.
   - Default: 0.1 (10%)
-- `--rename <to_rename.tsv>` Rename taxa in the database. Input is a tab-delimted file (.tsv) containing the Old Unique ID, New Unique ID, and New Long Name (Table 7).
 - `-h`, `--help` Show this help message and exit.
 
 **NOTE:** `build_database.py` must be run within `PhyloFisherDatabase_v1.0/database`
@@ -44,15 +43,3 @@ What occurred:
 
 **NOTE:** OrthoMCL orthogroup assignment hinges on integrity of ortholog choices in the starting ortholog files provided. If paralogs are unknowingly present in the provided ortholog alignments the paralogs will likely be prioritized by the fisher algorithm. To investigate the level of paralogy of genes in a custom database, we strongly recommend users re-add all taxa in their custom database using the main workflow of PhyloFisher. After an initial run through the main PhyloFisher workflow that includes manual curation, `build_dataset.py` will update profile HMMs, and blast databases to promote highest level of accuracy by the fisher algorithm in subsequent runs.
 
-`build_dabase.py --rename`:
-- The `--rename` flag allows users to rename taxa in the database. 
-- `--rename` requires a tab-delimted file (.tsv) containing the Old Unique ID, New Unique ID, and New Full Name (Table 7).
-- The script will back up the database and then do a full re-aligning, rebuilding of profile HMMs, and rebuilding of the blast database using the new name provided for each taxon in the input file.
-
-
-| Old Unique ID | New Unique ID |    New Full Name    |
-| :-----------: | :-----------: | :-----------------: |
-|   Pleucart    |   Chrycart    | Chrysotila carterae |
-
-<b>Table 7:</b> Example input file for the `--rename` flag of `build_database.py`. Here <i>Pleurochrysis carterae</i> (Unique
-ID = Pleucart) is being renamed to <i>Chrysotila carterae</i> (Unique ID = Chrycart) in the database.
