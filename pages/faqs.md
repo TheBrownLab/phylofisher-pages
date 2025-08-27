@@ -20,7 +20,7 @@ All aspects of PhyloFisher will run on a laptop computer. However, more powerful
 The length of time an entire run takes is dependent on the computational resources available.
 
 ### Can I use my own starting database?
-Yes. PhyloFisher is compatible with phylogenomic databases other than the one provided. Go [here](https://thebrownlab.github.io/phylofisher-pages/getting-started/custom-dataset-prep/) for further instructions.
+Yes. PhyloFisher is compatible with phylogenomic databases other than the one provided. Go [here](https://thebrownlab.github.io/phylofisher-pages/getting-started/custom-database-prep/) for further instructions.
 
 ### How do I change the default color selection used for single gene tree visualization?
 Simply change the color for taxa in tree_colors.tsv. New colors can be selected from [here](https://amoeba.msstate.edu/phylofisher/pdfs/svgcolors.pdf).
@@ -29,7 +29,7 @@ Simply change the color for taxa in tree_colors.tsv. New colors can be selected 
 Yes. The designation of sequences as orthologs or paralogs in the provided database is not fixed. These can be changed during manual inspection of single gene trees and the changes will be applied to the database in downstream steps.
 
 ### Can I delete taxa or genes from the provided database?
-Yes. We have provided `purge.py` for permanent removal of taxa from the database. Permanent removal of genes would require re-building a custom database from only the desired genes. This is possible and instructions for constructing a custom database are provided [here](https://thebrownlab.github.io/phylofisher-pages/getting-started/custom-dataset-prep/). However, an easier solution could be to
+Yes. We have provided `purge.py` for permanent removal of taxa from the database. Permanent removal of genes would require re-building a custom database from only the desired genes. This is possible and instructions for constructing a custom database are provided [here](https://thebrownlab.github.io/phylofisher-pages/getting-started/custom-database-prep/). However, an easier solution could be to
 simply not include the genes in final phylogenomic datasets via `select_orthologs.py`.
 
 ### Do I have to use the provided script for single gene tree construction?
