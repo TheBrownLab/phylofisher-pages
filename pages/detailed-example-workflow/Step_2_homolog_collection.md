@@ -22,7 +22,7 @@ permalink: /detailed-example-workflow/step2-project-dir
 
     - `--keep_tmp` Keep temporary files
 
-    - `--all_BBH`  Keep all significant BLAST hits regardless of phylogenetic affiliation as determined with FastTree through the phylogenetically aware route
+    - `--all_bbh`  Keep all significant BLAST hits regardless of phylogenetic affiliation as determined with FastTree through the phylogenetically aware route
 
     - `--add <input_metadata.tsv>` Path to input metadata file(different from original the one in `config.ini`) that contains new input proteomes. Must be used with `–add_to` option below.
 
@@ -72,6 +72,8 @@ permalink: /detailed-example-workflow/step2-project-dir
     Optional arguments:
     
     - `--orthologs_only`    Paralogs will NOT be included from any taxa in the database in downstream single gene tree construction.
+
+    - `--ht_include <file.txt>` Path to text file containing Unique IDs from database to include in homolog trees
 
     - `-h`, `--help` Show this help message and exit
 

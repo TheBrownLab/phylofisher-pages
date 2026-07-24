@@ -24,6 +24,9 @@ Optional arguments:
     - Options: `fasta`, `phylip`, `phylip-relaxed`, or `nexus`.
     - Default: `fasta`
   - `-c`, `--concatenation_only` Only concatenate alignments. Filtering, alignment, and trimming are not performed automatically.
+  - `--trimal_gt <N>` trimAl gap threshold parameter (0.0-1.0)
+    - Default: `0.80`
+  - `--clean_up` Clean up large intermediate files
   - `-t`, `--threads <N>` Desired number of threads to be utilized.
     - Default: `1`
   - `-o`, `--output <out_dir>` Path to user-defined output directory

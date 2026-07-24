@@ -20,6 +20,9 @@ permalink: /detailed-example-workflow/step3-project-dir
 
     - `-t`, `--threads <N>` Number of threads
         - Default: 1
+    - `-if`, `--in_format <format>` Format of input files
+        - Options: `fasta`, `phylip`, `phylip-relaxed`, or `nexus`
+        - Default: `fasta`
     - `--no_trees` Do not build single gene trees
 
     - `--trees_only <in_dir>` Only build single gene trees. No other operations performed

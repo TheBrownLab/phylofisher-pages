@@ -90,6 +90,8 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
     Optional arguments:
     - `--out_group out_group.txt` Path to text file containing out group taxa Unique IDs
 
+    - `--chimeras <chimeras.tsv>` A .tsv containing chimeras and taxa to collapse
+
     - `-n`, `--gene_number <N>` Number of genes for analysis
 
     - `-c`, `--percent_complete <N>` Threshold for percent completeness

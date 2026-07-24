@@ -23,7 +23,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     - `-a`, `--contaminants <contams.tsv>` Path to file containing known contaminants to be removed See Table 2
 
-    - `-b`, `--backpropagate` Path to file containing known contaminants to be backpropagated See Table 2
+    - `-b`, `--backpropagate` Backpropagate contaminants from the file specified by `-a`/`--contaminants`. Must be used in conjunction with the `-a` option. See Table 2
 
     - `-t`, `--threads <N>` Number of threads
     
