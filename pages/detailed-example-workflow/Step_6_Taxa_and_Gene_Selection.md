@@ -90,7 +90,7 @@ To select taxa and orthologs to be included in the final phylogenomic dataset us
     Optional arguments:
     - `--out_group out_group.txt` Path to text file containing out group taxa Unique IDs
 
-    - `--chimeras <chimeras.tsv>` A .tsv containing chimeras and taxa to collapse
+    - `--chimeras chimeras.tsv` A .tsv containing chimeras and taxa to collapse
 
     - `-n`, `--gene_number <N>` Number of genes for analysis
 
