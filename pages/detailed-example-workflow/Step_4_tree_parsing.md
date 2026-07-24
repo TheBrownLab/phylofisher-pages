@@ -54,7 +54,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     the only difference being the defined contaminant is marked for deletion.
 
 
-    NOTE: Only sequences from newly added organisms can be pre-marked for contamination or
+    **NOTE:** Only sequences from newly added organisms can be pre-marked for contamination or
     have contamination back propagated. Contamination from previously added organisms must be
     marked manually if found after their initial addition.
 

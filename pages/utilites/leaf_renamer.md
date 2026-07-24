@@ -25,4 +25,4 @@ Optional arguments:
 Default `leaf_renamer.py` output:
 - A tree file with leaf names replaced from Unique IDs to their corresponding long names from the database `metadata.tsv` file
 
-**Note:** If multiple taxa in the database have the same long name, the Unique ID will be appended to the long name to maintain uniqueness (e.g., `Homo_sapiens_Homosapi`).
+**NOTE:** If multiple taxa in the database have the same long name, the Unique ID will be appended to the long name to maintain uniqueness (e.g., `Homo_sapiens_Homosapi`).

@@ -45,7 +45,7 @@ permalink: /detailed-example-workflow/step2-project-dir
 
         - information regarding collected sequences whose best BLAST hit was not the corresponding ortholog in the database. (See fisher algorithm details for more information on this criterion). This file will NOT appear if the best BLAST hit of each retained sequence is the corresponding ortholog from the database.
 
-    NOTE: Users that plan to collect homologs from more taxa prior to single gene tree construction should stop here for now.
+    **NOTE:** Users that plan to collect homologs from more taxa prior to single gene tree construction should stop here for now.
 <br>
 <br>
 
@@ -57,7 +57,7 @@ permalink: /detailed-example-workflow/step2-project-dir
     Use `-–add` option in combination with the `--add_to` option of `fisher.py` to include homologs from more taxa in another round of addition to the working dataset. Create a new file identical to `input_metadata.tsv` in structure except with a different name (Ex. `Add_More_Taxa.tsv`). Put this new file in the project directory created in STEP 1. The information in this new text file will be appended to input_metadata.tsv.
 
 
-    NOTE: We recommend checking that the information contained in the new input file was added to the end of `input_metadata.tsv` after the new addition run is complete. If so, delete the new input file after addition is complete to avoid unnecessary clutter in the directory
+    **NOTE:** We recommend checking that the information contained in the new input file was added to the end of `input_metadata.tsv` after the new addition run is complete. If so, delete the new input file after addition is complete to avoid unnecessary clutter in the directory
 <br>
 <br>
 
@@ -134,7 +134,7 @@ permalink: /detailed-example-workflow/step2-project-dir
     
     - `-h`, `--help` Show this help message and exit
 
-    NOTE: To exclude genes, newly added taxa, or taxa already in the database, from the working dataset used for gene tree construction (NOT RECOMMENDED) change the column values for the column “SGT” in `gene_stats.tsv`,`new_taxa_stats.tsv`, `db_taxa_stats.tsv` respectively to “NO.” To exclude previously identified paralogs for taxa change the value for "Paralogs" in `db_taxa_stats.tsv` to "NO." 
+    **NOTE:** To exclude genes, newly added taxa, or taxa already in the database, from the working dataset used for gene tree construction (NOT RECOMMENDED) change the column values for the column "SGT" in `gene_stats.tsv`,`new_taxa_stats.tsv`, `db_taxa_stats.tsv` respectively to "NO." To exclude previously identified paralogs for taxa change the value for "Paralogs" in `db_taxa_stats.tsv` to "NO." 
 
     Default `working_dataset_constructor.py` output:
 

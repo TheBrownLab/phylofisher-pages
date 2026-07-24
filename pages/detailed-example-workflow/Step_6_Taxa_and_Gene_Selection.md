@@ -10,7 +10,7 @@ permalink: /detailed-example-workflow/step6-Taxa-and-Gene_Selection
 
 To select taxa and orthologs to be included in the final phylogenomic dataset users can run the scripts `select_taxa.py` and `select_orthologs.py` respectively. Each will generate a .tsv file (contents explained below) that will serve to select either taxa or orthologs to include and both .tsv files are used as input for the script `prep_final_dataset.py` downstream.
 
-NOTE: If all taxa and all orthologs in the database are to be included in the final phylogenomic dataset steps 1 and 2 are not necessary. Skip directly to step 3.
+**NOTE:** If all taxa and all orthologs in the database are to be included in the final phylogenomic dataset steps 1 and 2 are not necessary. Skip directly to step 3.
 
 
 1. Select taxa for the final phylogenomic analyses:
@@ -44,14 +44,14 @@ NOTE: If all taxa and all orthologs in the database are to be included in the fi
     - a plot showing completeness (number of orthologs) in each taxon. Groups of taxa are colored by level of completeness in increments of 10% (Figure 5).
 
 
-    NOTE: Detailed explanation of to the `--to_exclude` and `--to_include` options and their input files:
+    **NOTE:** Detailed explanation of to the `--to_exclude` and `--to_include` options and their input files:
 
     By default all taxa will be included. These options were designed to decrease the amount of manual manipulation of `select_taxa.tsv` generated in this first run of `select_taxa.py`. Both options take a file created by the user that has one column with an organism’s Unique ID or a taxonomic rank (higher or lower) from the metadata to be excluded or included in downstream steps. The options can be used individually or in conjunction with one another to implement decisions on taxa selection in an automated fashion. For example, if all taxa in the eukaryotic assemblage “Amoebozoa” are to be excluded from downstream phylogenomic analyses provide the `--exclude_taxa` option with a file (named anything) that contains “Amoebozoa” as the first entry of the column. This will result in all amoebozoans being marked as “no” in the “Include in Subset” column of `select_taxa.tsv` when it is generated. If a user wanted all amoebozoans excluded except *Dictyostelium discoideum* (Unique ID = Dictdisc) provide the `--exclude_taxa` option with a file (named anything) that contains “Amoebozoa” as the first entry of the column as before and the `--to_include` option with a file (named anything) with “Dictdisc” as the first entry of the column. This will result in all amoebozoans being marked as “no” in the “Include in Subset” column of `select_taxa.tsv` except *D*. *discoideum* which will be marked “yes.”
 
 
-    NOTE: `--to_include` is not necessary it only serves to ease the burden of manual taxa selection in cases as outlined above. All taxa are marked to include by default so it is NOT necessary to provide `--to_include` with a list of all taxa you wish to include in downstream steps.
+    **NOTE:** `--to_include` is not necessary it only serves to ease the burden of manual taxa selection in cases as outlined above. All taxa are marked to include by default so it is NOT necessary to provide `--to_include` with a list of all taxa you wish to include in downstream steps.
 
-    NOTE: Decisions provided to `--to_include` will override decisions provided to `--to_exclude` so be
+    **NOTE:** Decisions provided to `--to_include` will override decisions provided to `--to_exclude` so be
     cautious.
 
     Alternatively, all changes can be made manually by opening `select_taxa.tsv` and changing taxa designations from “yes” to “no".

@@ -39,7 +39,7 @@ Optional arguments:
     - Example: `path/to/input/*suffix`
   - `-h`, `--help` Show this help message and exit
 
-Default `matrix_constructor.p`y output:
+Default `matrix_constructor.py` output:
   - a directory called `matrix_constructor_out_<M.D.Y>` containing:
     - a directory `prequal` that contains:
       - `{gene_name}.aa` - unaligned gene file used as PREQUAL input
@@ -47,7 +47,7 @@ Default `matrix_constructor.p`y output:
       - `{gene_name}.aa.filtered.PP` - output of PREQUAL.&&
       - `{gene_name}.aa.warning` - output of PREQUAL.&&
     - a directory `mafft` that contains:
-      - `{gene_name}.aln` - output of of MAFFT and input for Divvier.
+      - `{gene_name}.aln` - output of MAFFT and input for Divvier.
       - `{gene_name}.aln.PP` - output of PREQUAL.&&
     - a directory `divvier` that contains:
       - `{gene_name}.aln.partial.fas` - output of Divvier and input for timAl.
