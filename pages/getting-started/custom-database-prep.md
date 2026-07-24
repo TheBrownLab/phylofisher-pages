@@ -18,14 +18,14 @@ permalink: /getting-started/custom-database-prep/
     * Each ortholog file must be named with the following convention `{gene_name}.fas`.
         * Ex. `RPL7.fas`
     * Each individual taxon should have a Unique ID as the header in all ortholog files. This Unique
-        ID must be the the same in all ortholog files.
+        ID must be the same in all ortholog files.
     * Each taxon can be present only once in each ortholog file.
 
 5. Place files of known paralogs for each gene in the directory `/database/paralogs/` (OPTIONAL)
     * Each gene file must be named with the following convention `{gene_name}_paralogs.fas`.
         * Ex. `RPL7_paralogs.fas`
     * Each individual taxon should have a Unique ID as the header in all paralog files. This Unique ID
-        must be the the same in all paralog files and the corresponding ortholog files.
+        must be the same in all paralog files and the corresponding ortholog files.
     * Each taxon can be present more than once in each paralog file.
     
 6. Place the complete proteome of each taxon present in the ortholog files in `/database/proteomes`

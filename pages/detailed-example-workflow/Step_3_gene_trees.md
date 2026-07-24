@@ -20,6 +20,9 @@ permalink: /detailed-example-workflow/step3-project-dir
 
     - `-t`, `--threads <N>` Number of threads
         - Default: 1
+    - `-if`, `--in_format <format>` Format of input files
+        - Options: `fasta`, `phylip`, `phylip-relaxed`, or `nexus`
+        - Default: `fasta`
     - `--no_trees` Do not build single gene trees
 
     - `--trees_only <in_dir>` Only build single gene trees. No other operations performed
@@ -178,13 +181,13 @@ contents.
 
 && - These are standard RAxML-ng output files for each gene that PhyloFisher has appended the corresponding gene name to. See the [`RAxML-ng documentation`](https://github.com/amkozlov/raxml-ng/wiki) for a thorough explanation of their contents.
 
-NOTE: For a detailed explanation of the methodology implemented in `sgt_constructor.py` see "Automated Filtering, Alignment, Trimming, and Gene Tree Construction."
+**NOTE:** For a detailed explanation of the methodology implemented in `sgt_constructor.py` see "Automated Filtering, Alignment, Trimming, and Gene Tree Construction."
 
-NOTE: If `sgt_constructor.py` dies in the middle of a run, simply provide the `sgt_constructor_out_<M.D.Y>` output directory from the previous run to `sgt_constructor.py` via the `-o` flag in addition to the previous command and the script will pick up where it left off.
+**NOTE:** If `sgt_constructor.py` dies in the middle of a run, simply provide the `sgt_constructor_out_<M.D.Y>` output directory from the previous run to `sgt_constructor.py` via the `-o` flag in addition to the previous command and the script will pick up where it left off.
 
-NOTE: If `sgt_constructor.py` is circumnavigated to use alternative parameters for sequence filtering, alignment, and tree reconstruction the following criteria must be met to renter the workflow and downstream steps perform correctly:
+**NOTE:** If `sgt_constructor.py` is circumnavigated to use alternative parameters for sequence filtering, alignment, and tree reconstruction the following criteria must be met to renter the workflow and downstream steps perform correctly:
 
-NOTE: If `sgt_constructor.py` is submitted to a compute node without internet access, the creation of internal conda environments will fail. To circumvent this, run `sgt_constructor.py` from the command line on the head node until the conda environments are created. Then kill the process and submit `sgt_constructor.py` to a compute node.
+**NOTE:** If `sgt_constructor.py` is submitted to a compute node without internet access, the creation of internal conda environments will fail. To circumvent this, run `sgt_constructor.py` from the command line on the head node until the conda environments are created. Then kill the process and submit `sgt_constructor.py` to a compute node.
 
 - Trees must have been built using a maximum likelihood program.  Downstream quality control steps are not set up to interpret Bayesian
 posterior probability values.

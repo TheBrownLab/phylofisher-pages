@@ -23,7 +23,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     - `-a`, `--contaminants <contams.tsv>` Path to file containing known contaminants to be removed See Table 2
 
-    - `-b`, `--backpropagate` Path to file containing known contaminants to be backpropagated See Table 2
+    - `-b`, `--backpropagate` Backpropagate contaminants from the file specified by `-a`/`--contaminants`. Must be used in conjunction with the `-a` option. See Table 2
 
     - `-t`, `--threads <N>` Number of threads
     
@@ -54,7 +54,7 @@ permalink: /detailed-example-workflow/step4-tree-parsing
     the only difference being the defined contaminant is marked for deletion.
 
 
-    NOTE: Only sequences from newly added organisms can be pre-marked for contamination or
+    **NOTE:** Only sequences from newly added organisms can be pre-marked for contamination or
     have contamination back propagated. Contamination from previously added organisms must be
     marked manually if found after their initial addition.
 

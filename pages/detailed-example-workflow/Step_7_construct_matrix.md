@@ -24,6 +24,9 @@ Optional arguments:
     - Options: `fasta`, `phylip`, `phylip-relaxed`, or `nexus`.
     - Default: `fasta`
   - `-c`, `--concatenation_only` Only concatenate alignments. Filtering, alignment, and trimming are not performed automatically.
+  - `--trimal_gt <N>` trimAl gap threshold parameter (0.0-1.0)
+    - Default: `0.80`
+  - `--clean_up` Clean up large intermediate files
   - `-t`, `--threads <N>` Desired number of threads to be utilized.
     - Default: `1`
   - `-o`, `--output <out_dir>` Path to user-defined output directory
@@ -36,7 +39,7 @@ Optional arguments:
     - Example: `path/to/input/*suffix`
   - `-h`, `--help` Show this help message and exit
 
-Default `matrix_constructor.p`y output:
+Default `matrix_constructor.py` output:
   - a directory called `matrix_constructor_out_<M.D.Y>` containing:
     - a directory `prequal` that contains:
       - `{gene_name}.aa` - unaligned gene file used as PREQUAL input
@@ -44,7 +47,7 @@ Default `matrix_constructor.p`y output:
       - `{gene_name}.aa.filtered.PP` - output of PREQUAL.&&
       - `{gene_name}.aa.warning` - output of PREQUAL.&&
     - a directory `mafft` that contains:
-      - `{gene_name}.aln` - output of of MAFFT and input for Divvier.
+      - `{gene_name}.aln` - output of MAFFT and input for Divvier.
       - `{gene_name}.aln.PP` - output of PREQUAL.&&
     - a directory `divvier` that contains:
       - `{gene_name}.aln.partial.fas` - output of Divvier and input for timAl.

@@ -10,7 +10,7 @@ permalink: /utilities/astral-runner
 
 Generate input files and infer a coalescent-based species tree with ASTRAL-III.
 
-`astral_runner.py.py [OPTIONS] -i <input_directories>`
+`astral_runner.py [OPTIONS] -i <input_directories>`
 
 Required arguments:
 - `-i`, `--input <input_directory>` Path to directory containing single gene trees and their corresponding bootstrap value files.
