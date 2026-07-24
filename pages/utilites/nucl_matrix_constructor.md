@@ -47,7 +47,7 @@ Default `nucl_matrix_constructor.py` output:
     - a directory `trimal` that contains:
       - {gene_name}.log - the log file from `trimal`
   - a directory `mafft` that contains:
-    -  `{gene_name}.aln` - output of MAFFT
+    - `{gene_name}.aln` - output of MAFFT
   - a directory `trimal` that contains:
     - `{gene_name}.final` - output of trimAL. Trimmed alignments, in FASTA format, that will be used for concatenation.
   - `indices.tsv` - a tab separated file with three columns outlining the single gene boundaries in the supermatrix:
