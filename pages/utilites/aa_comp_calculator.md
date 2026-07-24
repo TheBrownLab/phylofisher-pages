@@ -10,12 +10,16 @@ permalink: /utilities/aa-comp-calculator
 
 Calculate the amino acid composition of an input matrix.
 
-`aa_comp_calculator.py [OPTIONS] -i <input_matrix>`
+`aa_comp_calculator.py [OPTIONS] -d <database> -i <input_matrix>`
 
 Required arguments:
-- `-i`, `--input matrix` Path to input matrix for analysis
+- `-d`, `--database <database>` Path to PhyloFisher database directory
+- `-i`, `--input <matrix>` Path to input matrix for analysis
 
 Optional arguments:
+- `-if`, `--in_format <format>` Input format of matrix
+  - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters), or `phylip-relaxed` (names are not truncated)
+  - Default: `fasta`
 - `-o`, `--output <out_dir>` Path to user-defined output directory
   - Default: `./aa_comp_calculator_out_<M.D.Y>`
 - `--chimera` A .tsv containing a Unique ID, higher taxonomy, and lower taxonomy for each chimera within the input matrix. The file contains three columns:
