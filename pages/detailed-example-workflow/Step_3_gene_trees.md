@@ -221,4 +221,3 @@ posterior probability values.
     4. Sequence files used for length filtering must follow the naming convention `{gene_name}.trimmed` and be located in the `trees` subdirectory. THESE FILES ARE OPTIONAL.
 
     5. The files `metadata.tsv` and `tree_colors.tsv` can be copied from `PhyloFisherDatabase_v1.0/database/` and placed into `my_directory` along with the `input_metadata.tsv` file.
-
