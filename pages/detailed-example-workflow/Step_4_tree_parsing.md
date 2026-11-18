@@ -37,6 +37,8 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
     - `-h`, `--help` Show this help message and exit
 
+    **NOTE:** `forest.py` and `forest_local.py` read the gene trees named `{gene_name}.treefile` in the `trees` directory of the input. Trees named `{gene_name}.raxml.support`, as produced by PhyloFisher versions prior to v1.3.0, are also accepted.
+
     Default forest.py output:
 
     - a directory `forest_out_<M.D.Y>` that contains:
@@ -175,6 +177,9 @@ permalink: /detailed-example-workflow/step4-tree-parsing
 
 
     1. After all decisions have been made click “Save to tsv” on the top left-hand side of the `Parasorter` display. The default name `ParaSorter` will suggest for the new file will be `{gene_name}_parsed.tsv`. The file must have `{gene_name}_parsed.tsv` naming convention for subsequent steps of the workflow to perform correctly.
+
+
+    **NOTE:** If you are using ParaSorter2 rather than the original ParaSorter, use the [`parasorter_compat.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/parasorter-compat) utility instead of `forest.py`. Its `to_sqlite` mode packages `sgt_constructor_out_<M.D.Y>-local.tar.gz` into a ParaSorter2 project database, and its `to_tsv` mode exports the decisions saved in ParaSorter2 as the `{gene_name}_parsed.tsv` files required by `apply_to_db.py` in the next step.
 
 
 3. Tree parsing strategy used in creation of the PhyloFisher v.1.0 provided database.

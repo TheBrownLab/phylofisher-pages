@@ -37,6 +37,8 @@ Optional arguments:
   - Example: `path/to/input/*suffix`
 - `-h`, `--help` Show this help message and exit
 
+**NOTE:** Supermatrices are built with `matrix_constructor.py --concatenation_only`, which concatenates the input alignments as provided without realigning or trimming them. Input alignments must therefore already be aligned and trimmed (e.g., the `{gene_name}.final` files from `matrix_constructor.py`'s `trimal` directory) and be named `{gene_name}.fas`.
+
 Default `random_resampler.py` output:
 - a directory `./random_resampler_out_<M.D.Y>ps<percentage>` that contains:
   - a set of supermatrices made from the randomly sampled genes. Each matrix has a file name structured in the following way: `<percentage of genes from total sampled>rep<replicate number>.<fas|phy|nex>`

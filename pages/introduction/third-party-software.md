@@ -23,6 +23,7 @@ permalink: /introduction/third-party-software
 - OrthoMCL v 5.0 (Chen et al., 2006)
 - PREQUAL v. 1.02 (Whelan et al., 2018)
 - RAxML v. 8.2.12 (Stamatakis, 2014)
+- RAxML-NG v. 1.2.0 (Kozlov et al., 2019)
 - trimAl v.1.4.rev15 (Capella-Gutiérrez et al., 2009)
 
 **NOTE:** Installation of the above software is handled by `conda`.
