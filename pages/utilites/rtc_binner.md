@@ -32,6 +32,8 @@ Optional arguments:
   - Example: `path/to/input/*suffix`
 - `-h`, `--help` Show this help message and exit
 
+**NOTE:** Supermatrices are built with `matrix_constructor.py --concatenation_only`, which concatenates the input alignments as provided without realigning or trimming them. Input alignments must therefore already be aligned and trimmed (e.g., the `{gene_name}.final` files from `matrix_constructor.py`'s `trimal` directory) and be named `{gene_name}.fas`.
+
 `rtc_binner.py` output:
 - a directory `./rtc_binner_out_<M.D.Y>` with 7 subdirectories:
   - `matrix_constructor25/` that contains:

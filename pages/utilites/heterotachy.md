@@ -10,6 +10,8 @@ permalink: /utilities/heterotachy
 
 Remove the most heterotachious sites from a phylogenomic supermatrix in a stepwise fashion.
 
+The input matrix and tree do not need to originate from PhyloFisher. Taxon names are temporarily replaced with unique IDs during the analysis, so any taxon names can be used, including names longer than 10 characters or names that are substrings of other names.
+
 `heterotachy.py -tr <input_tree> -m <input_matrix> [OPTIONS]`
 
 Required arguments:
@@ -19,6 +21,9 @@ Required arguments:
 Optional arguments:
 - `-s`, `--step_size <N>` Size of removal step (i.e., 1000 sites removed) to exhaustion.
   - Default: `3000`
+- `-if`, `--in_format <format>` Format of the input matrix.
+  - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters) or `phylip-relaxed` (names are not truncated)
+  - Default: `fasta`
 - `-f`, `--out_format <format>` Desired format of the output matrices.
   - Options: `fasta`, `nexus`, `phylip` (names truncated at 10 characters) or `phylip-relaxed` (names are not truncated)
   - Default: `fasta`
@@ -39,6 +44,8 @@ Default `heterotachy.py` output
   - `fast.DE.dat`&& - an output of the dist_est operation on `fast.phy` and `fast.tre`.
   - `fast.rate_est.dat`&& - an output of the dist_est operation on `fast.phy` and `fast.tre`.
   - a subdirectory `steps_<N>` (N=step size) that contains the files:
-    - `step<0-N>.phy` - phylip formatted matrix files with N less sites than the previous step to exhaustion.
+    - `step<0-N>.<fas|nex|phy>` - matrix files, in the format specified by `-f`/`--out_format`, with N less sites than the previous step to exhaustion.
+
+**NOTE:** Every taxon in the tree must be present in the matrix and vice versa, and taxon names in the matrix must be unique. If not, `heterotachy.py` exits with an error listing the offending taxa.
 
 && These are standard dist_est input/output files. See the [dist_est documentation](https://amoeba.msstate.edu/phylofisher/pdfs/distest.pdf) for a more detailed explanation of their contents.

@@ -23,7 +23,7 @@ Optional arguments:
   - `-if`, `--in_format <format>` format of the input files.
     - Options: `fasta`, `phylip`, `phylip-relaxed`, or `nexus`.
     - Default: `fasta`
-  - `-c`, `--concatenation_only` Only concatenate alignments. Filtering, alignment, and trimming are not performed automatically.
+  - `-c`, `--concatenation_only` Only concatenate alignments. PREQUAL filtering, alignment, and trimming are not performed; the input files are concatenated as provided, so they must already be aligned and trimmed and be named `{gene_name}.fas`.
   - `--trimal_gt <N>` trimAl gap threshold parameter (0.0-1.0)
     - Default: `0.80`
   - `--clean_up` Clean up large intermediate files
@@ -51,8 +51,9 @@ Default `matrix_constructor.py` output:
       - `{gene_name}.aln.PP` - output of PREQUAL.&&
     - a directory `divvier` that contains:
       - `{gene_name}.aln.partial.fas` - output of Divvier and input for timAl.
-    - a directory `trimAl` that contains:
-      - `{gene_name}.gt80trimAl.fas` - output of trimAl. Trimmed alignments, in FASTA format, that will be used for concatenation and can be used to compute single ortholog trees for use in coalescent-based analyses.
+    - a directory `trimal` that contains:
+      - `{gene_name}.trimal` - output of trimAl.
+      - `{gene_name}.final` - trimmed alignments, in FASTA format, with sequences that contain no residues removed. These will be used for concatenation and can be used to compute single ortholog trees for use in coalescent-based analyses.
     - `indices.tsv` - a tab separated file with three columns outlining the single gene boundaries in the supermatrix:
       1. Gene - name of the gene
       2. Start - first position of the gene within the super matrix
@@ -61,5 +62,8 @@ Default `matrix_constructor.py` output:
     - `matrix_constructor_stats.tsv` - a tab separated file with two columns:
       1. Taxon -Unique ID of taxon in the database
       2. Percent Missing Data - percentage of unoccupied sites within the concatenated matrix.
+    - `occupancy.tsv` - a tab separated table of gene occupancy with one row per taxon and one column per gene, where `1` indicates the taxon is present in that gene's alignment and `0` that it is absent. This file can be provided to [`plot_matrix_completeness.py`](https://thebrownlab.github.io/phylofisher-pages/utilities/plot-matrix-completeness).
+
+When `--concatenation_only` is used, only `indices.tsv`, the matrix, `matrix_constructor_stats.tsv`, and `occupancy.tsv` are produced.
 
 && - These are standard PREQUAL output files for each gene that PhyloFisher has appended the corresponding gene name to. See the PREQUAL documentation for a thorough explanation of their contents.
